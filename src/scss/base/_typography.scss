@@ -1,0 +1,27 @@
+h1{
+  font:600 24px/1.4 'OpenSans-SemiBold', arial;
+  color: $darkGreen;
+}
+h2{
+  font:700 20px/1.4 'OpenSans-Bold', arial;
+  color:$darkGray;
+}
+h3{
+  font:600 18px/1.4 'OpenSans-SemiBold', arial;
+  color:$black;
+  margin-bottom: 20px;
+}
+h4{
+  font:700 16px/1.4 'OpenSans-Bold', arial;
+  color:$darkGray;
+  margin-bottom: 8px;
+}
+h5{
+  font:700 14px/1.4 'OpenSans-Bold', arial;
+  color:$darkGray;
+  margin-bottom: 8px;
+}
+a{
+  color: $green;
+  font-family: 'OpenSans-SemiBold', arial;
+}
