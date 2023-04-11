@@ -1,0 +1,26 @@
+.container{
+  padding-inline: 20px;
+  margin-inline: auto;
+  max-width: 1400px;
+  width: 100%;
+}
+.container-fluid{
+  padding-inline: 60px;
+  margin-inline: auto;
+}
+.flex{
+  @include flex(flex, wrap, null, center,30px);
+}
+.grid{
+  @include grid(grid, 60px, null, center);
+}
+.grid-col-2{
+  grid-template-columns: repeat(2,1fr);
+}
+.grid-col-3{
+  grid-template-columns: repeat(3,1fr);
+}
+.text-purple{
+  color: $purple-light;
+  font-weight: 700;
+}

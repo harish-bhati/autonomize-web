@@ -1,0 +1,25 @@
+.footer{
+  padding: 100px 0 120px;
+  background: linear-gradient(175.23deg, #14014B 74.06%, #B900C9 143.26%);
+  &_top{
+    padding-bottom: 80px;
+    grid-template-columns: 1fr 40%;
+    &-form{
+      h6{
+        margin-bottom: 8px;
+      }
+    }
+    .form-control{
+      margin-top: 30px;
+    }
+  }
+  &_bottom{
+    grid-template-columns: 1fr 40%;
+    &-first{
+      gap: 60px;
+    }
+    &-last{
+      gap: 60px;
+    }
+  }
+}

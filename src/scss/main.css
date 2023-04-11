@@ -1,0 +1,361 @@
+@charset "UTF-8";
+/*
+    Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property
+    - The "symbol *" part is to solve Firefox SVG sprite bug
+*/
+@import url("https://fonts.googleapis.com/css2?family=Moon+Dance&family=Open+Sans:wght@300;400;600;700;800&family=Roboto:wght@300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Moon+Dance&family=Open+Sans:wght@300;400;600;700;800&family=Roboto:wght@300;400;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reapply the pointer cursor for anchor tags */
+a, button {
+  cursor: revert;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Remove list styles (bullets/numbers) */
+ol, ul {
+  list-style: none;
+}
+
+/* For images to not be able to exceed their container */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* reset default text opacity of input placeholder */
+::placeholder {
+  color: unset;
+}
+
+/*
+    Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property
+    - The "symbol *" part is to solve Firefox SVG sprite bug
+ */
+*:where(:not(html, iframe, canvas, img, svg, video, audio, button):not(svg *, symbol *)) {
+  all: unset;
+  display: revert;
+}
+
+body {
+  color: #fff;
+  font: 400 16px/1.2 "Open Sans", arial;
+  background: #14014B;
+}
+
+h1 {
+  font: 700 70px/1 "Open Sans", arial;
+  letter-spacing: -0.06em;
+  color: #E108BE;
+  margin-bottom: 8px;
+}
+
+h2 {
+  font: 900 60px/1.4 "Open Sans", arial;
+  background: linear-gradient(270deg, #EE2DFF 0%, #BFAFFF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  margin: 0;
+}
+
+h3 {
+  font: 700 40px/1.2 "Open Sans", arial;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+h4 {
+  font: 700 32px/1.2 "Open Sans", arial;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+h5 {
+  font: 600 30px/1.2 "Open Sans", arial;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+h6 {
+  font: 700 24px/1.2 "Open Sans", arial;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+a {
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+}
+
+.container {
+  padding-inline: 20px;
+  margin-inline: auto;
+  max-width: 1400px;
+  width: 100%;
+}
+
+.container-fluid {
+  padding-inline: 60px;
+  margin-inline: auto;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 60px;
+  align-items: center;
+}
+
+.grid-col-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-col-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.text-purple {
+  color: #EA39FF;
+  font-weight: 700;
+}
+
+.btn {
+  display: inline-flex;
+  padding: 20px 40px;
+  background: linear-gradient(270deg, #B900C9 0%, #5C2FDC 100%);
+  border-radius: 6px;
+}
+.btn_small {
+  padding: 10px 19px;
+}
+
+.form-input {
+  background: transparent;
+  box-shadow: none;
+  border-bottom: 1px solid #986AC5;
+  padding-bottom: 10px;
+}
+
+.header {
+  background: #160054;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.header .container-fluid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.header_nav-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+.header_nav-link:hover {
+  color: #B900C9;
+}
+.header_logo {
+  padding-block: 26px;
+}
+.header_btn {
+  background: #B900C9;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  padding-inline: 40px;
+  padding-bottom: 16px;
+  margin-right: -60px;
+}
+.header_btn:hover {
+  background: #BA2E93;
+}
+
+.ityped {
+  min-height: 70px;
+}
+
+.banner {
+  padding-block: 30px;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(171, 47, 173, 0.42) 0%, #14014A 100%);
+  mix-blend-mode: normal;
+}
+.banner_content {
+  grid-template-columns: 1fr 35%;
+}
+.banner_content-caption {
+  order: -1;
+}
+.banner_content-title {
+  color: #fff;
+}
+.banner_content-btn {
+  margin-top: 40px;
+}
+
+.solution {
+  padding-block: 50px;
+}
+.solution_top {
+  display: grid;
+  grid-template-columns: 1fr 30%;
+  gap: 50px;
+}
+.solution_bottom {
+  gap: 50px 140px;
+}
+.solution_card {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  padding: 35px 50px;
+}
+.solution_card-icon {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.card-gradient {
+  position: relative;
+  background-image: transparent;
+  z-index: 1;
+}
+.card-gradient:hover::before {
+  opacity: 1;
+}
+.card-gradient::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(270deg, #B900C9 0%, #5C2FDC 60%);
+  z-index: -1;
+  transition: opacity 0.5s linear;
+  opacity: 0;
+}
+
+.plateform {
+  padding-block: 50px;
+}
+.plateform_card-text {
+  order: -1;
+}
+.plateform_card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+.plateform_card-item {
+  padding-left: 28px;
+}
+.plateform_card-item::marker {
+  content: "✓";
+}
+
+.process {
+  padding-block: 50px;
+}
+.process_card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+.process_card-item {
+  display: flex;
+  gap: 30px;
+}
+.process_card-item h4 {
+  margin-bottom: 8px;
+}
+.process_card-count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  border: 3px solid #BA2E93;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.architectural {
+  padding-block: 50px;
+}
+.architectural_bottom {
+  gap: 40px;
+}
+.architectural-title {
+  text-align: center;
+}
+.architectural_card:not(:last-child) {
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  padding-right: 40px;
+}
+
+.trusted {
+  padding-bottom: 55px;
+}
+.trusted-caption {
+  order: -1;
+}
+.trusted-caption h2 {
+  margin-bottom: 40px;
+}
+.trusted-caption p:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.footer {
+  padding: 100px 0 120px;
+  background: linear-gradient(175.23deg, #14014B 74.06%, #B900C9 143.26%);
+}
+.footer_top {
+  padding-bottom: 80px;
+  grid-template-columns: 1fr 40%;
+}
+.footer_top-form h6 {
+  margin-bottom: 8px;
+}
+.footer_top .form-control {
+  margin-top: 30px;
+}
+.footer_bottom {
+  grid-template-columns: 1fr 40%;
+}
+.footer_bottom-first {
+  gap: 60px;
+}
+.footer_bottom-last {
+  gap: 60px;
+}/*# sourceMappingURL=main.css.map */

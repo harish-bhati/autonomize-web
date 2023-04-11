@@ -1,27 +1,46 @@
+body{
+  color: $white;
+  font:400 16px/1.2 'Open Sans', arial;
+  background: #14014B;
+}
 h1{
-  font:600 24px/1.4 'OpenSans-SemiBold', arial;
-  color: $darkGreen;
+  font:700 70px/1 'Open Sans', arial;
+  letter-spacing: -0.06em;
+  color:$purple-regular;
+  margin-bottom: 8px;
 }
 h2{
-  font:700 20px/1.4 'OpenSans-Bold', arial;
-  color:$darkGray;
+  font:900 60px/1.4 'Open Sans', arial;
+  background: $purple-text-lg;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  margin: 0;
 }
 h3{
-  font:600 18px/1.4 'OpenSans-SemiBold', arial;
-  color:$black;
-  margin-bottom: 20px;
+  font:700 40px/1.2 'Open Sans', arial;
+  color:$white;
+  margin-bottom: 40px;
 }
 h4{
-  font:700 16px/1.4 'OpenSans-Bold', arial;
-  color:$darkGray;
-  margin-bottom: 8px;
+  font:700 32px/1.2 'Open Sans', arial;
+  color:$white;
+  margin-bottom: 0;
 }
 h5{
-  font:700 14px/1.4 'OpenSans-Bold', arial;
-  color:$darkGray;
-  margin-bottom: 8px;
+  font:600 30px/1.2 'Open Sans', arial;
+  color:$white;
+  margin-bottom: 12px;
+}
+h6{
+  font:700 24px/1.2 'Open Sans', arial;
+  color:$white;
+  margin-bottom: 20px;
 }
 a{
-  color: $green;
-  font-family: 'OpenSans-SemiBold', arial;
+  font-size: 14px;
+  color: $white;
+  text-transform: uppercase;
+  transition: all .5s ease;
 }
