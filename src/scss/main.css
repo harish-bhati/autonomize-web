@@ -106,10 +106,9 @@ a {
 }
 
 .container {
-  padding-inline: 20px;
+  padding-inline: 30px;
   margin-inline: auto;
   max-width: 1400px;
-  width: 100%;
 }
 
 .container-fluid {
@@ -232,6 +231,7 @@ a {
 }
 .solution_bottom {
   gap: 50px 140px;
+  align-items: stretch;
 }
 .solution_card {
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -266,6 +266,12 @@ a {
 
 .plateform {
   padding-block: 50px;
+}
+.plateform h5 {
+  margin-bottom: 0;
+}
+.plateform_text {
+  margin-bottom: 80px;
 }
 .plateform_card-text {
   order: -1;
@@ -310,7 +316,8 @@ a {
 }
 
 .architectural {
-  padding-block: 50px;
+  padding: 80px 0 100px;
+  background: linear-gradient(270deg, #EE2DFF 0%, #BFAFFF 100%);
 }
 .architectural_bottom {
   gap: 40px;
@@ -321,6 +328,13 @@ a {
 .architectural_card:not(:last-child) {
   border-right: 1px solid rgba(255, 255, 255, 0.2);
   padding-right: 40px;
+}
+.architectural h5 {
+  color: #1C065A;
+  margin-bottom: 20px;
+}
+.architectural p {
+  color: #1C065A;
 }
 
 .trusted {
@@ -334,6 +348,25 @@ a {
 }
 .trusted-caption p:not(:last-child) {
   margin-bottom: 30px;
+}
+
+.advertisement {
+  padding: 100px 0 70px;
+  background: linear-gradient(270deg, #EE2DFF 0%, #BFAFFF 100%);
+}
+.advertisement_caption {
+  text-align: center;
+  max-width: 1160px;
+  width: 100%;
+  margin-inline: auto;
+}
+.advertisement_caption h4 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+.advertisement_caption h4, .advertisement_caption h5 {
+  color: #1C065A;
+  font-weight: 400;
 }
 
 .footer {
