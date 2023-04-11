@@ -1,0 +1,73 @@
+.plateform{
+  padding-block: 50px;
+  &_card{
+    &-text{
+      order: -1;
+    }
+    &-list{
+      display: flex;
+      flex-direction: column;
+      gap:35px;
+    }
+    
+    &-item {
+      padding-left: 28px;
+      &::marker{
+        content: '\2713';
+      }
+    }
+  }
+}
+.process{
+  padding-block: 50px;
+  &_card{
+    &-list{
+      display: flex;
+      flex-direction: column;
+      gap: 70px;
+    }
+    &-item{
+      display: flex;
+      gap: 30px;
+      h4{
+        margin-bottom: 8px;
+      }
+    }
+    &-count{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 78px;
+      height: 78px;
+      border-radius: 50%;
+      border:3px solid $purple;
+      font-size: 32px;
+      font-weight: 600;
+    }
+  }
+}
+.architectural{
+  padding-block: 50px;
+  &_bottom{
+    gap: 40px;
+  }
+  &-title{
+    text-align: center;
+  }
+  &_card:not(:last-child){
+    border-right: 1px solid $border;
+    padding-right: 40px;
+  }
+}
+.trusted{
+  padding-bottom: 55px;
+  &-caption{
+    order: -1;
+    h2{
+      margin-bottom: 40px;
+    }
+    p:not(:last-child){
+      margin-bottom: 30px;
+    }
+  }
+}

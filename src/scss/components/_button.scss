@@ -1,0 +1,9 @@
+.btn{
+  display: inline-flex;
+  padding: 20px 40px;
+  background: $purple-btn-lg;
+  border-radius: 6px;
+  &_small{
+    padding: 10px 19px;
+  }
+}

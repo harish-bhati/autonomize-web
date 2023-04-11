@@ -1,0 +1,17 @@
+.banner{
+  padding-block: 30px;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(171, 47, 173, 0.42) 0%, #14014A 100%);
+  mix-blend-mode: normal;
+  &_content{
+    grid-template-columns: 1fr 35%;
+    &-caption{
+      order: -1;
+    }
+    &-title{
+      color: $white;
+    }
+    &-btn{
+      margin-top: 40px;
+    }
+  }
+}

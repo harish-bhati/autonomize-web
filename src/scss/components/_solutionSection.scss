@@ -1,0 +1,49 @@
+.solution{
+  padding-block: 50px;
+  &_top{
+    display: grid;
+    grid-template-columns: 1fr 30%;
+    gap: 50px;
+  }
+  &_bottom{
+    gap:50px 140px;
+  }
+  &_card{
+    border: 1px solid $border;
+    border-radius: 6px;
+    padding: 35px 50px;
+    // background-image: $purple-btn-lg;
+    // transition: background-image 0.5s linear;
+    // &:hover{
+    //   background-image: $purple-text-lg;
+    //   border-color: transparent;
+    // }
+    &-icon{
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.card-gradient {
+  position: relative;
+  background-image: transparent;
+  z-index: 1;
+  &:hover{
+    &::before {
+      opacity: 1;
+    }
+  }
+  &::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: $purple-card-lg;
+    z-index: -1;
+    transition: opacity 0.5s linear;
+    opacity: 0;
+  }
+}
