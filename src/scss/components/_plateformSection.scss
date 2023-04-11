@@ -1,5 +1,11 @@
 .plateform{
   padding-block: 50px;
+  h5{
+    margin-bottom: 0;
+  }
+  &_text{
+    margin-bottom: 80px;
+  }
   &_card{
     &-text{
       order: -1;
@@ -47,7 +53,8 @@
   }
 }
 .architectural{
-  padding-block: 50px;
+  padding: 80px 0 100px;
+  background: linear-gradient(270deg, #EE2DFF 0%, #BFAFFF 100%);
   &_bottom{
     gap: 40px;
   }
@@ -57,6 +64,13 @@
   &_card:not(:last-child){
     border-right: 1px solid $border;
     padding-right: 40px;
+  }
+  h5{
+    color:#1C065A;
+    margin-bottom: 20px;
+  }
+  p{
+    color:#1C065A;
   }
 }
 .trusted{
@@ -68,6 +82,24 @@
     }
     p:not(:last-child){
       margin-bottom: 30px;
+    }
+  }
+}
+.advertisement{
+  padding: 100px 0 70px;
+  background: linear-gradient(270deg, #EE2DFF 0%, #BFAFFF 100%);
+  &_caption{
+    text-align: center;
+    max-width: 1160px;
+    width: 100%;
+    margin-inline: auto;
+    h4{
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+    h4,h5{
+      color: #1C065A;
+      font-weight: 400;
     }
   }
 }
