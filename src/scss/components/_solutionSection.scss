@@ -1,9 +1,7 @@
 .solution{
-  padding-block: 50px;
+  padding-top: 140px;
   &_top{
-    display: grid;
-    grid-template-columns: 1fr 30%;
-    gap: 50px;
+    margin-bottom: 60px;
   }
   &_bottom{
     gap:50px 140px;
@@ -13,12 +11,18 @@
     border: 1px solid $border;
     border-radius: 6px;
     padding: 35px 50px;
-    // background-image: $purple-btn-lg;
-    // transition: background-image 0.5s linear;
-    // &:hover{
-    //   background-image: $purple-text-lg;
-    //   border-color: transparent;
-    // }
+    &-list{
+      padding-left: 20px;
+    }
+    &-item{
+      list-style-type: disc;
+      padding-left: 10px;
+      padding-bottom: 3px;
+    }
+    h3{
+      color: #EA39FF;
+      margin-bottom: 15px;
+    }
     &-icon{
       display: inline-block;
       margin-bottom: 10px;

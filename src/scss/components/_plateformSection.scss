@@ -1,12 +1,13 @@
 .plateform{
-  padding-block: 50px;
+  padding-top: 120px;
   h5{
     margin-bottom: 0;
   }
   &_text{
-    margin-bottom: 80px;
+    margin-bottom: 130px;
   }
   &_card{
+    align-items: flex-start;
     &-text{
       order: -1;
     }
@@ -24,57 +25,72 @@
     }
   }
 }
-.process{
-  padding-block: 50px;
-  &_card{
-    &-list{
-      display: flex;
-      flex-direction: column;
-      gap: 70px;
-    }
-    &-item{
-      display: flex;
-      gap: 30px;
-      h4{
-        margin-bottom: 8px;
-      }
-    }
-    &-count{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 78px;
-      height: 78px;
-      border-radius: 50%;
-      border:3px solid $purple;
-      font-size: 32px;
-      font-weight: 600;
-    }
-  }
-}
+// .process{
+//   padding-top: 180px;
+//   &_card{
+//     &-list{
+//       display: flex;
+//       flex-direction: column;
+//       gap: 70px;
+//     }
+//     &-item{
+//       display: flex;
+//       gap: 30px;
+//       h4{
+//         margin-bottom: 8px;
+//       }
+//     }
+//     &-count{
+//       display: flex;
+//       align-items: center;
+//       justify-content: center;
+//       width: 78px;
+//       height: 78px;
+//       border-radius: 50%;
+//       border:3px solid $purple;
+//       font-size: 32px;
+//       font-weight: 600;
+//     }
+//   }
+// }
 .architectural{
-  padding: 80px 0 100px;
-  background: linear-gradient(270deg, #EE2DFF 0%, #BFAFFF 100%);
+  padding-top: 140px;
+  .container{
+    background: linear-gradient(360deg, #B900C9 0%, #5C2FDC 100%);
+    padding: 70px 60px;
+    border-radius: 10px;
+  }
+  &-title{
+    margin-bottom: 75px;
+  }
   &_bottom{
     gap: 40px;
+    align-items: flex-start;
+    h3{
+      margin-bottom: 20px;
+    }
   }
   &-title{
     text-align: center;
   }
-  &_card:not(:last-child){
-    border-right: 1px solid $border;
-    padding-right: 40px;
-  }
-  h5{
-    color:#1C065A;
-    margin-bottom: 20px;
-  }
-  p{
-    color:#1C065A;
+  &_card {
+    &:not(:last-child){
+      border-right: 1px solid $border;
+      padding-right: 40px;
+    }
+    &-caption{
+      margin-top: 32px;
+    }
   }
 }
 .trusted{
   padding-bottom: 55px;
+  grid-template-columns: 1fr 45%;
+  padding-top: 120px;
+  gap: 100px;
+  img{
+    justify-self: flex-end;
+  }
   &-caption{
     order: -1;
     h2{
@@ -86,20 +102,71 @@
   }
 }
 .advertisement{
-  padding: 100px 0 70px;
-  background: linear-gradient(270deg, #EE2DFF 0%, #BFAFFF 100%);
+  padding-bottom: 100px;
+  &-icon{
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  // &-box{
+  //   position: relative;
+  // }
   &_caption{
     text-align: center;
-    max-width: 1160px;
+    max-width: 927px;
     width: 100%;
     margin-inline: auto;
-    h4{
-      font-size: 36px;
-      margin-bottom: 20px;
-    }
-    h4,h5{
-      color: #1C065A;
+    h3{
       font-weight: 400;
     }
+  }
+}
+.company{ 
+  padding-top: 140px;
+  &_text{
+    padding-bottom: 110px;
+    &-subtitle{
+      font-weight: 400;
+    }
+  }
+  &_epm{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 80px;
+    h5{
+      margin-top: 24px;
+    }
+    ul{
+      justify-content: center;
+    }
+  }
+  &_card{
+    text-align: center;
+    p{
+      margin: 8px 0 22px;
+    }
+  }
+}
+.investor{
+  margin-top: 130px;
+  .container{
+    background: linear-gradient(360deg, #B900C9 0%, #5C2FDC 100%);
+    padding: 90px 70px;
+    border-radius: 10px;
+  }
+  &-title{
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  &_bottom{
+    grid-template-columns: repeat(4,1fr);
+    gap: 32px;
+  }
+}
+.mission{
+  padding-top: 100px;
+  h3{
+    font-weight: 400;
   }
 }

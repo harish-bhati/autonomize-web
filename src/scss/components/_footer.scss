@@ -1,13 +1,33 @@
 .footer{
-  padding: 100px 0 120px;
-  background: linear-gradient(175.23deg, #14014B 74.06%, #B900C9 143.26%);
+  // padding: 60px 0 90px;
+  &-bg{
+    position: relative;
+    padding: 120px 0 90px;
+    margin-top: 200px;
+    background: url("../../../src/assets/images/footer-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  a{
+    text-transform: capitalize;
+  }
   &_top{
     padding-bottom: 80px;
     grid-template-columns: 1fr 40%;
+    align-items: flex-start;
+    &-links{
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
+    }
     &-form{
       h6{
         margin-bottom: 8px;
       }
+    }
+    .form-input{
+      min-width: 305;
     }
     .form-control{
       margin-top: 30px;

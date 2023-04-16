@@ -8,35 +8,35 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <link href="./scss/main.css" rel="stylesheet">
 </head>
-<body>
+<body class="autonomize_body">
   <!--Header-->
   <header class="header">
     <div class="container-fluid">
-      <a href="#" class="header_logo">
+      <a href="Javascript:void(0)" class="header_logo">
         <img class="header_logo-img" src="./assets/images/autonomize-logo.png" alt="Autonomize" />
       </a>
       <nav class="header_nav">
         <ul class="header_nav-list">
           <li class="header_nav-item">
-            <a href="#" class="header_nav-link">Solutions</a>
+            <a href="#solution" class="header_nav-link">Solutions</a>
           </li>
           <li class="header_nav-item">
-            <a href="#" class="header_nav-link">Plateform</a>
+            <a href="#plateform" class="header_nav-link">Platform</a>
           </li>
           <li class="header_nav-item">
-            <a href="#" class="header_nav-link">Trusted AI</a>
+            <a href="#trusted" class="header_nav-link">Trusted AI</a>
           </li>
           <li>
-            <a href="#" class="header_nav-link">Company</a>
+            <a href="#company" class="header_nav-link">Company</a>
           </li>
         </ul>
       </nav>
-      <a href="#" class="header_btn">Request Demo</a>
+      <a href="Javascript:void(0)" class="header_btn" data-toggle="request-modal">Request Demo</a>
     </div>
   </header>
   <main>
      <!--Banner Section-->
-    <section class="banner">
+    <section class="banner content-section">
       <div class="container">
         <figure class="banner_content grid grid-col-2">
           <img class="banner_content-img" src="./assets/images/abstract-sphere-particles.png" alt="Abstract Sphere Particles" />
@@ -45,18 +45,18 @@
             <h1 class="banner_content-subtitle" >
               <span class="ityped"></span>
             </h1>
-            <a href="#" class="btn banner_content-btn">See Solutions</a>
+            <a href="Javascript:void(0)" class="btn banner_content-btn">See Solutions</a>
           </figcaption>
         </figure>
       </div>
     </section>
     <!--Solutions Section-->
-    <section class="solution">
+    <section class="solution content-section" id="solution">
       <div class="container">
         <div class="solution_top">
           <div class="solution_text">
             <h2 class="solution_text-title">Solution</h2>
-            <h3 class="solution_text-subtitle">We Provide</h3>
+            <h3 class="solution_text-subtitle">We believe we should put Patients at the center of the entire Healthcare ecosystem. Our main focus is a suite of capabilities to accelerate patient-centric initiatives for our customers.</h3>
           </div>
         </div>
         <div class="solution_bottom grid grid-col-2">
@@ -71,7 +71,7 @@
               </svg>
             </span>
             <figcaption class="solution_card-caption">
-              <h5 class="solution_card-title">Accelerate Clinical Research</h5>
+              <h3 class="solution_card-title">Accelerate Clinical Research</h3>
               <ul class="solution_card-list">
                 <li class="solution_card-item">Digitize Protocols to optimize for enrollment & engagement</li>
                 <li class="solution_card-item">Accelerate patient matching to clinical trials</li>
@@ -90,7 +90,7 @@
               </svg>
             </span>
             <figcaption class="solution_card-caption">
-              <h5 class="solution_card-title">Patient Engagement & Activation</h5>
+              <h3 class="solution_card-title">Patient Engagement & Activation</h3>
               <ul class="solution_card-list">
                 <li class="solution_card-item">Develop a comprehensive health picture of patients throughout the journey</li>
                 <li class="solution_card-item">Deliver personalized member experiences</li>
@@ -108,7 +108,7 @@
               </svg>
             </span>
             <figcaption class="solution_card-caption">
-              <h5 class="solution_card-title">Clinical Decision Support</h5>
+              <h3 class="solution_card-title">Clinical Decision Support</h3>
               <ul class="solution_card-list">
                 <li class="solution_card-item">Recommend contextual clinical insights</li>
                 <li class="solution_card-item">Deliver personalized patient experiences</li>
@@ -126,7 +126,7 @@
               </svg>
             </span>
             <figcaption class="solution_card-caption">
-              <h5 class="solution_card-title">Healthcare Enterprise</h5>
+              <h3 class="solution_card-title">Healthcare Enterprise</h3>
               <ul class="solution_card-list">
                 <li class="solution_card-item">Neural Search of internal private data sources</li>
                 <li class="solution_card-item">Knowledge Management: Turn multi-modal internal datasets to contextually searchable knowledge</li>
@@ -136,13 +136,12 @@
         </div>
       </div>
     </section>
-    <!--Plateform Section-->
-    <section class="plateform">
+    <!--Platform Section-->
+    <section class="plateform content-section" id="plateform">
       <div class="container">
         <div class="plateform_text">
           <h2 class="plateform_text-title">Platform</h2>
-          <h5 class="plateform_text-subtitle">Uniting Human Insight with Machine Precision.</h5>
-          <h5 class="plateform_text-subtitle">Trusted Infrastructure for Generative AI in healthcare.</h5>
+          <h3 class="plateform_text-subtitle">Uniting Human Insight with Machine Precision. Trusted Infrastructure for Generative AI in healthcare</h3>
         </div>
         <figure class="plateform_card grid grid-col-2">
           <img src="./assets/images/solution-slide.jpg" alt="Platform" />
@@ -158,10 +157,12 @@
       </div>
     </section>
     <!--Process Section-->
-    <section class="process">
+    <!-- <section class="process content-section">
       <div class="container">
         <figure class="process_card grid grid-col-2">
-          <img src="./assets/images/Genesis.png" alt="Genesis" />
+          <video height="500px" controls autoplay>
+            <source src="./assets/images/Genesis.mov" type="video/mp4">
+          </video>
           <figcaption class="process_card-text">
             <ul class="process_card-list">
               <li class="process_card-item">
@@ -189,54 +190,83 @@
           </figcaption>
         </figure>
       </div>
-    </section>
+    </section> -->
     <!--Architectural Section-->
-    <section class="architectural">
+    <section class="architectural content-section">
       <div class="container">
         <h3 class="architectural-title">Architectural Tenets</h3>
         <div class="architectural_bottom grid grid-col-3">
           <figure class="architectural_card">
             <span class="architectural_card-icon">
-              <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M16.6667 0C7.46167 0 0 7.46167 0 16.6667C0 25.8717 7.46167 33.3333 16.6667 33.3333C25.8717 33.3333 33.3333 25.8717 33.3333 16.6667C33.3333 7.46167 25.8717 0 16.6667 0ZM28.1967 10H22.8383C22.5892 8.12467 22.2751 6.25855 21.8967 4.405C24.5431 5.54489 26.7522 7.50672 28.1967 10ZM18.3567 3.45333C18.47 4.04 19.0017 6.85 19.4317 10H13.9017C14.3317 6.85 14.8633 4.04 14.9767 3.45333C15.5317 3.38167 16.0933 3.33333 16.6667 3.33333C17.24 3.33333 17.8017 3.38167 18.3567 3.45333ZM20 16.6667C20 17.6633 19.9283 18.81 19.8183 20H13.515C13.405 18.81 13.3333 17.6633 13.3333 16.6667C13.3333 15.67 13.405 14.5233 13.515 13.3333H19.8183C19.9283 14.5233 20 15.67 20 16.6667ZM11.4367 4.405C11.0582 6.25855 10.7441 8.12467 10.495 10H5.13667C6.58118 7.50672 8.79021 5.54489 11.4367 4.405ZM3.77167 13.3333H10.14C10.055 14.4467 10 15.5733 10 16.6667C10 17.76 10.055 18.8867 10.1417 20H3.77167C3.495 18.9317 3.33333 17.82 3.33333 16.6667C3.33333 15.5133 3.49667 14.4017 3.77167 13.3333ZM5.13667 23.3333H10.495C10.8083 25.7067 11.195 27.75 11.4367 28.9283C8.79021 27.7884 6.58118 25.8266 5.13667 23.3333ZM14.9767 29.88C14.5622 27.7074 14.2037 25.5244 13.9017 23.3333H19.4317C19.1289 25.5243 18.7704 27.7072 18.3567 29.88C17.8017 29.9517 17.24 30 16.6667 30C16.0933 30 15.5317 29.9517 14.9767 29.88ZM21.8967 28.9283C22.1383 27.75 22.525 25.7067 22.8383 23.3333H28.1967C26.7522 25.8266 24.5431 27.7884 21.8967 28.9283ZM29.5617 20H23.1933C23.2783 18.8867 23.3333 17.76 23.3333 16.6667C23.3333 15.5733 23.2783 14.4467 23.1917 13.3333H29.56C29.8367 14.4017 30 15.5133 30 16.6667C30 17.82 29.8383 18.9317 29.5617 20Z" fill="url(#paint0_linear_6625_7069)"/>
-                <linearGradient id="paint0_linear_6625_7069" x1="33.3333" y1="14.9449" x2="1.32313e-07" y2="14.9449" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#B900C9"/>
-                <stop offset="1" stop-color="#5C2FDC"/>
+              <svg width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 63C3 48.6697 16.0686 37.0541 32.1892 37.0541M56.5135 46.7838V41.9189C56.5135 40.6287 56.001 39.3913 55.0886 38.4789C54.1763 37.5666 52.9389 37.0541 51.6486 37.0541C50.3584 37.0541 49.121 37.5666 48.2087 38.4789C47.2963 39.3913 46.7838 40.6287 46.7838 41.9189V46.7838M46.7838 14.3514C46.7838 20.6205 41.7016 25.7027 35.4324 25.7027C29.1633 25.7027 24.0811 20.6205 24.0811 14.3514C24.0811 8.08217 29.1633 3 35.4324 3C41.7016 3 46.7838 8.08217 46.7838 14.3514ZM40.2973 46.7838H63V63H40.2973V46.7838Z" stroke="url(#paint0_linear_6722_9211)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+                <linearGradient id="paint0_linear_6722_9211" x1="33" y1="3" x2="33" y2="63" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#9E86FF"/>
+                <stop offset="1" stop-color="#F38FFF"/>
                 </linearGradient>
               </svg>
             </span>
             <figcaption class="architectural_card-caption">
-              <h5 class="architectural_card-title">Privacy First</h5>
+              <h3 class="architectural_card-title">Privacy First</h3>
               <p>Configurable de-identification and tokenization of data before it leaves the customer environment. Where possible, we go beyond existing laws to uphold the highest privacy standards.</p>
             </figcaption>
           </figure>
           <figure class="architectural_card">
             <span class="architectural_card-icon">
-              <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M16.6667 0C7.46167 0 0 7.46167 0 16.6667C0 25.8717 7.46167 33.3333 16.6667 33.3333C25.8717 33.3333 33.3333 25.8717 33.3333 16.6667C33.3333 7.46167 25.8717 0 16.6667 0ZM28.1967 10H22.8383C22.5892 8.12467 22.2751 6.25855 21.8967 4.405C24.5431 5.54489 26.7522 7.50672 28.1967 10ZM18.3567 3.45333C18.47 4.04 19.0017 6.85 19.4317 10H13.9017C14.3317 6.85 14.8633 4.04 14.9767 3.45333C15.5317 3.38167 16.0933 3.33333 16.6667 3.33333C17.24 3.33333 17.8017 3.38167 18.3567 3.45333ZM20 16.6667C20 17.6633 19.9283 18.81 19.8183 20H13.515C13.405 18.81 13.3333 17.6633 13.3333 16.6667C13.3333 15.67 13.405 14.5233 13.515 13.3333H19.8183C19.9283 14.5233 20 15.67 20 16.6667ZM11.4367 4.405C11.0582 6.25855 10.7441 8.12467 10.495 10H5.13667C6.58118 7.50672 8.79021 5.54489 11.4367 4.405ZM3.77167 13.3333H10.14C10.055 14.4467 10 15.5733 10 16.6667C10 17.76 10.055 18.8867 10.1417 20H3.77167C3.495 18.9317 3.33333 17.82 3.33333 16.6667C3.33333 15.5133 3.49667 14.4017 3.77167 13.3333ZM5.13667 23.3333H10.495C10.8083 25.7067 11.195 27.75 11.4367 28.9283C8.79021 27.7884 6.58118 25.8266 5.13667 23.3333ZM14.9767 29.88C14.5622 27.7074 14.2037 25.5244 13.9017 23.3333H19.4317C19.1289 25.5243 18.7704 27.7072 18.3567 29.88C17.8017 29.9517 17.24 30 16.6667 30C16.0933 30 15.5317 29.9517 14.9767 29.88ZM21.8967 28.9283C22.1383 27.75 22.525 25.7067 22.8383 23.3333H28.1967C26.7522 25.8266 24.5431 27.7884 21.8967 28.9283ZM29.5617 20H23.1933C23.2783 18.8867 23.3333 17.76 23.3333 16.6667C23.3333 15.5733 23.2783 14.4467 23.1917 13.3333H29.56C29.8367 14.4017 30 15.5133 30 16.6667C30 17.82 29.8383 18.9317 29.5617 20Z" fill="url(#paint0_linear_6625_7069)"/>
-                <linearGradient id="paint0_linear_6625_7069" x1="33.3333" y1="14.9449" x2="1.32313e-07" y2="14.9449" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#B900C9"/>
-                <stop offset="1" stop-color="#5C2FDC"/>
+              <svg width="55" height="61" viewBox="0 0 55 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M38.5278 54.1083L32.7722 48.3528L29.6389 51.4861L38.5278 60.375L54.0833 44.8194L50.95 41.6861L38.5278 54.1083Z" fill="url(#paint0_linear_6722_9226)"/>
+                <path d="M11.8611 13.7083C13.0884 13.7083 14.0833 12.7134 14.0833 11.4861C14.0833 10.2588 13.0884 9.26389 11.8611 9.26389C10.6338 9.26389 9.63889 10.2588 9.63889 11.4861C9.63889 12.7134 10.6338 13.7083 11.8611 13.7083Z" fill="url(#paint1_linear_6722_9226)"/>
+                <path d="M11.8611 31.4861C13.0884 31.4861 14.0833 30.4912 14.0833 29.2639C14.0833 28.0366 13.0884 27.0417 11.8611 27.0417C10.6338 27.0417 9.63889 28.0366 9.63889 29.2639C9.63889 30.4912 10.6338 31.4861 11.8611 31.4861Z" fill="url(#paint2_linear_6722_9226)"/>
+                <path d="M11.8611 49.2639C13.0884 49.2639 14.0833 48.269 14.0833 47.0417C14.0833 45.8144 13.0884 44.8194 11.8611 44.8194C10.6338 44.8194 9.63889 45.8144 9.63889 47.0417C9.63889 48.269 10.6338 49.2639 11.8611 49.2639Z" fill="url(#paint3_linear_6722_9226)"/>
+                <path d="M40.75 0.375H5.19444C4.0157 0.375 2.88524 0.843252 2.05175 1.67675C1.21825 2.51024 0.75 3.6407 0.75 4.81944V53.7083C0.75 54.8871 1.21825 56.0175 2.05175 56.851C2.88524 57.6845 4.0157 58.1528 5.19444 58.1528H22.9722V53.7083H5.19444V40.375H45.1944V4.81944C45.1944 3.6407 44.7262 2.51024 43.8927 1.67675C43.0592 0.843252 41.9287 0.375 40.75 0.375ZM40.75 35.9306H5.19444V22.5972H40.75V35.9306ZM40.75 18.1528H5.19444V4.81944H40.75V18.1528Z" fill="url(#paint4_linear_6722_9226)"/>
+                <defs>
+                <linearGradient id="paint0_linear_6722_9226" x1="54.0833" y1="27.2759" x2="0.75" y2="27.2759" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#F68FFF"/>
+                <stop offset="1" stop-color="#9E86FF"/>
                 </linearGradient>
+                <linearGradient id="paint1_linear_6722_9226" x1="54.0833" y1="27.2759" x2="0.75" y2="27.2759" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#F68FFF"/>
+                <stop offset="1" stop-color="#9E86FF"/>
+                </linearGradient>
+                <linearGradient id="paint2_linear_6722_9226" x1="54.0833" y1="27.2759" x2="0.75" y2="27.2759" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#F68FFF"/>
+                <stop offset="1" stop-color="#9E86FF"/>
+                </linearGradient>
+                <linearGradient id="paint3_linear_6722_9226" x1="54.0833" y1="27.2759" x2="0.75" y2="27.2759" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#F68FFF"/>
+                <stop offset="1" stop-color="#9E86FF"/>
+                </linearGradient>
+                <linearGradient id="paint4_linear_6722_9226" x1="54.0833" y1="27.2759" x2="0.75" y2="27.2759" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#F68FFF"/>
+                <stop offset="1" stop-color="#9E86FF"/>
+                </linearGradient>
+                </defs>
               </svg>
             </span>
             <figcaption class="architectural_card-caption">
-              <h5 class="architectural_card-title">Data Never Leaves</h5>
+              <h3 class="architectural_card-title">Data Never Leaves</h3>
               <p>Data never leaves their customer/cloud (models to data model); option to deploy in a virtual private cloud (VPC)</p>
             </figcaption>
           </figure>
           <figure class="architectural_card">
             <span class="architectural_card-icon">
-              <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M16.6667 0C7.46167 0 0 7.46167 0 16.6667C0 25.8717 7.46167 33.3333 16.6667 33.3333C25.8717 33.3333 33.3333 25.8717 33.3333 16.6667C33.3333 7.46167 25.8717 0 16.6667 0ZM28.1967 10H22.8383C22.5892 8.12467 22.2751 6.25855 21.8967 4.405C24.5431 5.54489 26.7522 7.50672 28.1967 10ZM18.3567 3.45333C18.47 4.04 19.0017 6.85 19.4317 10H13.9017C14.3317 6.85 14.8633 4.04 14.9767 3.45333C15.5317 3.38167 16.0933 3.33333 16.6667 3.33333C17.24 3.33333 17.8017 3.38167 18.3567 3.45333ZM20 16.6667C20 17.6633 19.9283 18.81 19.8183 20H13.515C13.405 18.81 13.3333 17.6633 13.3333 16.6667C13.3333 15.67 13.405 14.5233 13.515 13.3333H19.8183C19.9283 14.5233 20 15.67 20 16.6667ZM11.4367 4.405C11.0582 6.25855 10.7441 8.12467 10.495 10H5.13667C6.58118 7.50672 8.79021 5.54489 11.4367 4.405ZM3.77167 13.3333H10.14C10.055 14.4467 10 15.5733 10 16.6667C10 17.76 10.055 18.8867 10.1417 20H3.77167C3.495 18.9317 3.33333 17.82 3.33333 16.6667C3.33333 15.5133 3.49667 14.4017 3.77167 13.3333ZM5.13667 23.3333H10.495C10.8083 25.7067 11.195 27.75 11.4367 28.9283C8.79021 27.7884 6.58118 25.8266 5.13667 23.3333ZM14.9767 29.88C14.5622 27.7074 14.2037 25.5244 13.9017 23.3333H19.4317C19.1289 25.5243 18.7704 27.7072 18.3567 29.88C17.8017 29.9517 17.24 30 16.6667 30C16.0933 30 15.5317 29.9517 14.9767 29.88ZM21.8967 28.9283C22.1383 27.75 22.525 25.7067 22.8383 23.3333H28.1967C26.7522 25.8266 24.5431 27.7884 21.8967 28.9283ZM29.5617 20H23.1933C23.2783 18.8867 23.3333 17.76 23.3333 16.6667C23.3333 15.5733 23.2783 14.4467 23.1917 13.3333H29.56C29.8367 14.4017 30 15.5133 30 16.6667C30 17.82 29.8383 18.9317 29.5617 20Z" fill="url(#paint0_linear_6625_7069)"/>
-                <linearGradient id="paint0_linear_6625_7069" x1="33.3333" y1="14.9449" x2="1.32313e-07" y2="14.9449" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#B900C9"/>
-                <stop offset="1" stop-color="#5C2FDC"/>
+              <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M42.8571 60H17.1429C14.7857 60 12.8571 58.0714 12.8571 55.7143V49.2857H17.1429V55.7143H42.8571V49.2857H47.1429V55.7143C47.1429 58.0714 45.2143 60 42.8571 60ZM27.8571 27.4286V49.2857H32.1429V27.4286L37.7143 33L40.7143 30L30 19.2857L19.2857 30L22.2857 33L27.8571 27.4286Z" fill="url(#paint0_linear_6722_9237)"/>
+                <path d="M48.8571 15.2143C46.9286 6.42857 39.2143 0 30 0C20.7857 0 13.0714 6.42857 11.1429 15.2143C4.71429 16.5 0 22.2857 0 28.9286C0 36.6429 6.21429 42.8571 13.9286 42.8571H21.4286V38.5714H13.9286C8.57143 38.5714 4.28571 34.2857 4.28571 28.9286C4.28571 24 8.14286 19.7143 13.0714 19.2857H15L15.2143 17.5714C16.0714 9.85714 22.5 4.28571 30 4.28571C37.5 4.28571 43.9286 9.85714 44.7857 17.3571L45 19.2857L46.7143 19.5C51.6429 19.9286 55.5 24.2143 55.5 29.1429C55.5 34.5 51.2143 38.7857 45.8571 38.7857H38.5714V43.0714H46.0714C53.7857 43.0714 60 36.8571 60 29.1429C60 22.2857 55.2857 16.5 48.8571 15.2143Z" fill="url(#paint1_linear_6722_9237)"/>
+                <defs>
+                <linearGradient id="paint0_linear_6722_9237" x1="60" y1="26.9009" x2="2.38163e-07" y2="26.9009" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#F68FFF"/>
+                <stop offset="1" stop-color="#9E86FF"/>
                 </linearGradient>
+                <linearGradient id="paint1_linear_6722_9237" x1="60" y1="26.9009" x2="2.38163e-07" y2="26.9009" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#F68FFF"/>
+                <stop offset="1" stop-color="#9E86FF"/>
+                </linearGradient>
+                </defs>
               </svg>
             </span>
             <figcaption class="architectural_card-caption">
-              <h5 class="architectural_card-title">Cloud Agnostic</h5>
+              <h3 class="architectural_card-title">Cloud Agnostic</h3>
               <p>Containerized architecture allows us to deploy rapidly across multiple cloud environments, allowing flexibility and choice.</p>
             </figcaption>
           </figure>
@@ -244,45 +274,48 @@
       </div>
     </section>
     <!--Trusted AI Section-->
-    <section class="solution">
+    <section class="solution content-section" id="trusted">
       <div class="container">
+        <div class="solution_text">
+          <h2 class="solution_text-title">Trusted AI</h2>
+          <h3 class="solution_text-subtitle">We are on a pursuit of a trusted AI-driven healthcare future, built on trust, empathy, and an unwavering commitment to human well-being.</h3>
+        </div>
         <figure class="trusted grid grid-col-2">
           <img src="./assets/images/trusted-ai.png" alt="Trusted AI">
           <figcaption class="trusted-caption">
-            <h2>Trusted AI</h2>
             <p>The focus on Trusted AI is a vital initiative at the intersection of cutting-edge technology and compassionate care. In this rapidly evolving landscape, we are focused on the importance of integrating ethical, transparent, and accountable principles into healthcare AI systems.</p>
             <p>Generative AI is a powerful set of capabilities that, if responsibly integrated, can unlock tremendous potential for human health and wellbeing and healthcare and lifesciences organizations. But ensuring that requires deep emphasis on a series of principles:</p>
+            <p>Our commitment to excellence in healthcare is driven by five key principles that guide the design and deployment of our generative AI solutions:</p>
           </figcaption>
         </figure>
         <div class="solution_bottom grid grid-col-2">
-          <h4>Our commitment to excellence in healthcare is driven by five key principles that guide the design and deployment of our generative AI solutions:</h4>
           
           <div class="solution_card card-gradient">
-            <h5 class="solution_card-title">Patient-Centric Design</h5>
+            <h3 class="solution_card-title">Patient-Centric Design</h3>
             <p class="solution_card-dis">
               At Autonomize AI, we place patients at the heart of our innovation process. By prioritizing their needs, experiences, and well-being, we ensure our AI-driven solutions elevate the quality of healthcare services and enhance patient outcomes.
             </p>
           </div>
           <div class="solution_card card-gradient">
-            <h5 class="solution_card-title">Data Privacy & Security</h5>
+            <h3 class="solution_card-title">Data Privacy & Security</h3>
             <p class="solution_card-dis">
               We understand the critical importance of protecting patient data. That's why we adhere to the highest regulatory standards and implement stringent measures to safeguard data privacy and security, fostering trust in our AI-driven healthcare solutions.
             </p>
           </div>
           <div class="solution_card card-gradient">
-            <h5 class="solution_card-title">Ethical AI Development</h5>
+            <h3 class="solution_card-title">Ethical AI Development</h3>
             <p class="solution_card-dis">
               Autonomize AI is dedicated to incorporating ethical frameworks and guidelines into every stage of our generative AI development. We ensure unbiased, transparent, and fair decision-making processes that align with the core values of healthcare.
             </p>
           </div>
           <div class="solution_card card-gradient">
-            <h5 class="solution_card-title">Inclusivity & Accessibility</h5>
+            <h3 class="solution_card-title">Inclusivity & Accessibility</h3>
             <p class="solution_card-dis">
               We strive to develop AI solutions that cater to diverse populations, considering various demographics, health conditions, and socio-economic backgrounds. Our goal is to promote equitable access to quality healthcare services for all through the power of AI.
             </p>
           </div>
           <div class="solution_card card-gradient">
-            <h5 class="solution_card-title">Collaborative Human-Centered Design</h5>
+            <h3 class="solution_card-title">Collaborative Human-Centered Design</h3>
             <p class="solution_card-dis">
               At Autonomize AI, we emphasize the pairing of human insight with machine precision using human-centered design principles, co-piloting workflows, and continuously refining our AI systems for optimal performance, safety, and reliability.
             </p>
@@ -337,87 +370,371 @@
         </div>
       </div>
     </section> -->
-    <!--Advertisement Section-->
-    <section class="advertisement">
+    <!--Company Section-->
+    <section class="company content-section" id="company">
       <div class="container">
-        <div class="advertisement_caption">
-          <h4>Our culture can be summed up as Being Bold, Acting Fast and Having Fun while creating Delightful experiences for our stakeholders!</h4>
-          <h5>If you are interested in exploring a career at Autonomize, check out our openings here</h5>
+        <div class="company_text text-center">
+          <h2 class="company_text-title">Company</h2>
+          <h3 class="company_text-subtitle">Our mission is to make all of the world's biomedical knowledge accessible to power human health outcomes. We believe that empowering health professionals and patients with the right information in the right context at the right time, will accelerate outcomes for everyone. 
+          </h3>
         </div>
+        <div class="company_epm"> 
+        <figure class="company_card">
+          <img src="./assets/images/ganesh -padmanabhan.png" alt="Platform" />
+          <figcaption class="plateform_card-text">
+            <h5>Ganesh Padmanabhan</h5>
+            <p>CEO, Director</p>
+            <ul class="flex">
+              <li>
+                <a href="Javascript:void(0)">
+                  <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.8205 0.5H2.29437C1.33672 0.5 0.5 1.18906 0.5 2.13547V19.7005C0.5 20.652 1.33672 21.5 2.29437 21.5H19.8153C20.7781 21.5 21.5 20.6464 21.5 19.7005V2.13547C21.5056 1.18906 20.7781 0.5 19.8205 0.5ZM7.00953 18.0045H4.00109V8.65063H7.00953V18.0045ZM5.60938 7.22844H5.58781C4.625 7.22844 4.00156 6.51172 4.00156 5.61453C4.00156 4.70094 4.64141 4.00109 5.62578 4.00109C6.61016 4.00109 7.2125 4.69578 7.23406 5.61453C7.23359 6.51172 6.61016 7.22844 5.60938 7.22844ZM18.0045 18.0045H14.9961V12.89C14.9961 11.6647 14.5583 10.8275 13.4698 10.8275C12.6383 10.8275 12.1461 11.39 11.9272 11.938C11.8452 12.1348 11.8231 12.403 11.8231 12.6767V18.0045H8.81469V8.65063H11.8231V9.95234C12.2609 9.32891 12.9448 8.43172 14.5363 8.43172C16.5111 8.43172 18.005 9.73344 18.005 12.5398L18.0045 18.0045Z" fill="white"/>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="Javascript:void(0)">
+                  <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M23.25 2.13282C22.406 2.49955 21.513 2.74116 20.5992 2.85001C21.5595 2.28769 22.2817 1.39434 22.6303 0.337508C21.7224 0.86841 20.7307 1.24092 19.6978 1.43907C19.2629 0.983225 18.7397 0.620588 18.1603 0.373201C17.5808 0.125814 16.9571 -0.00115656 16.327 7.93801e-06C13.7761 7.93801e-06 11.7117 2.03438 11.7117 4.5422C11.7099 4.89102 11.7499 5.23881 11.8308 5.57813C10.0016 5.49238 8.2104 5.02575 6.57187 4.2081C4.93333 3.39044 3.48351 2.23977 2.31516 0.829695C1.90527 1.52069 1.6885 2.30909 1.6875 3.11251C1.6875 4.68751 2.50922 6.0797 3.75 6.89532C3.01487 6.87787 2.29481 6.68331 1.65094 6.32813V6.38438C1.65094 8.58751 3.24469 10.4203 5.35406 10.8375C4.9574 10.9432 4.54864 10.9968 4.13812 10.9969C3.84683 10.9974 3.5562 10.9691 3.27047 10.9125C3.85687 12.7172 5.56359 14.0297 7.58531 14.0672C5.94252 15.3333 3.9256 16.0175 1.85156 16.0125C1.48341 16.012 1.11561 15.99 0.75 15.9469C2.85993 17.2942 5.31255 18.0068 7.81594 18C16.3172 18 20.9616 11.0766 20.9616 5.07188C20.9616 4.87501 20.9564 4.67813 20.947 4.48595C21.8485 3.84472 22.6283 3.04787 23.25 2.13282Z" fill="white"/>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </figcaption>
+        </figure>
+        
+        <figure class="company_card">
+          <img src="./assets/images/ganesh -padmanabhan.png" alt="Platform" />
+          <figcaption class="plateform_card-text">
+            <h5>Kris Nair</h5>
+            <p>CTO, Director</p>
+            <ul class="flex">
+              <li>
+                <a href="Javascript:void(0)">
+                  <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.8205 0.5H2.29437C1.33672 0.5 0.5 1.18906 0.5 2.13547V19.7005C0.5 20.652 1.33672 21.5 2.29437 21.5H19.8153C20.7781 21.5 21.5 20.6464 21.5 19.7005V2.13547C21.5056 1.18906 20.7781 0.5 19.8205 0.5ZM7.00953 18.0045H4.00109V8.65063H7.00953V18.0045ZM5.60938 7.22844H5.58781C4.625 7.22844 4.00156 6.51172 4.00156 5.61453C4.00156 4.70094 4.64141 4.00109 5.62578 4.00109C6.61016 4.00109 7.2125 4.69578 7.23406 5.61453C7.23359 6.51172 6.61016 7.22844 5.60938 7.22844ZM18.0045 18.0045H14.9961V12.89C14.9961 11.6647 14.5583 10.8275 13.4698 10.8275C12.6383 10.8275 12.1461 11.39 11.9272 11.938C11.8452 12.1348 11.8231 12.403 11.8231 12.6767V18.0045H8.81469V8.65063H11.8231V9.95234C12.2609 9.32891 12.9448 8.43172 14.5363 8.43172C16.5111 8.43172 18.005 9.73344 18.005 12.5398L18.0045 18.0045Z" fill="white"/>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="Javascript:void(0)">
+                  <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M23.25 2.13282C22.406 2.49955 21.513 2.74116 20.5992 2.85001C21.5595 2.28769 22.2817 1.39434 22.6303 0.337508C21.7224 0.86841 20.7307 1.24092 19.6978 1.43907C19.2629 0.983225 18.7397 0.620588 18.1603 0.373201C17.5808 0.125814 16.9571 -0.00115656 16.327 7.93801e-06C13.7761 7.93801e-06 11.7117 2.03438 11.7117 4.5422C11.7099 4.89102 11.7499 5.23881 11.8308 5.57813C10.0016 5.49238 8.2104 5.02575 6.57187 4.2081C4.93333 3.39044 3.48351 2.23977 2.31516 0.829695C1.90527 1.52069 1.6885 2.30909 1.6875 3.11251C1.6875 4.68751 2.50922 6.0797 3.75 6.89532C3.01487 6.87787 2.29481 6.68331 1.65094 6.32813V6.38438C1.65094 8.58751 3.24469 10.4203 5.35406 10.8375C4.9574 10.9432 4.54864 10.9968 4.13812 10.9969C3.84683 10.9974 3.5562 10.9691 3.27047 10.9125C3.85687 12.7172 5.56359 14.0297 7.58531 14.0672C5.94252 15.3333 3.9256 16.0175 1.85156 16.0125C1.48341 16.012 1.11561 15.99 0.75 15.9469C2.85993 17.2942 5.31255 18.0068 7.81594 18C16.3172 18 20.9616 11.0766 20.9616 5.07188C20.9616 4.87501 20.9564 4.67813 20.947 4.48595C21.8485 3.84472 22.6283 3.04787 23.25 2.13282Z" fill="white"/>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </figcaption>
+        </figure>
+        
+        <figure class="company_card">
+          <img src="./assets/images/ganesh -padmanabhan.png" alt="Platform" />
+          <figcaption class="plateform_card-text">
+            <h5>Skip Fleshman</h5>
+            <p>Director </p>
+            <ul class="flex">
+              <li>
+                <a href="Javascript:void(0)">
+                  <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.8205 0.5H2.29437C1.33672 0.5 0.5 1.18906 0.5 2.13547V19.7005C0.5 20.652 1.33672 21.5 2.29437 21.5H19.8153C20.7781 21.5 21.5 20.6464 21.5 19.7005V2.13547C21.5056 1.18906 20.7781 0.5 19.8205 0.5ZM7.00953 18.0045H4.00109V8.65063H7.00953V18.0045ZM5.60938 7.22844H5.58781C4.625 7.22844 4.00156 6.51172 4.00156 5.61453C4.00156 4.70094 4.64141 4.00109 5.62578 4.00109C6.61016 4.00109 7.2125 4.69578 7.23406 5.61453C7.23359 6.51172 6.61016 7.22844 5.60938 7.22844ZM18.0045 18.0045H14.9961V12.89C14.9961 11.6647 14.5583 10.8275 13.4698 10.8275C12.6383 10.8275 12.1461 11.39 11.9272 11.938C11.8452 12.1348 11.8231 12.403 11.8231 12.6767V18.0045H8.81469V8.65063H11.8231V9.95234C12.2609 9.32891 12.9448 8.43172 14.5363 8.43172C16.5111 8.43172 18.005 9.73344 18.005 12.5398L18.0045 18.0045Z" fill="white"/>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="Javascript:void(0)">
+                  <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M23.25 2.13282C22.406 2.49955 21.513 2.74116 20.5992 2.85001C21.5595 2.28769 22.2817 1.39434 22.6303 0.337508C21.7224 0.86841 20.7307 1.24092 19.6978 1.43907C19.2629 0.983225 18.7397 0.620588 18.1603 0.373201C17.5808 0.125814 16.9571 -0.00115656 16.327 7.93801e-06C13.7761 7.93801e-06 11.7117 2.03438 11.7117 4.5422C11.7099 4.89102 11.7499 5.23881 11.8308 5.57813C10.0016 5.49238 8.2104 5.02575 6.57187 4.2081C4.93333 3.39044 3.48351 2.23977 2.31516 0.829695C1.90527 1.52069 1.6885 2.30909 1.6875 3.11251C1.6875 4.68751 2.50922 6.0797 3.75 6.89532C3.01487 6.87787 2.29481 6.68331 1.65094 6.32813V6.38438C1.65094 8.58751 3.24469 10.4203 5.35406 10.8375C4.9574 10.9432 4.54864 10.9968 4.13812 10.9969C3.84683 10.9974 3.5562 10.9691 3.27047 10.9125C3.85687 12.7172 5.56359 14.0297 7.58531 14.0672C5.94252 15.3333 3.9256 16.0175 1.85156 16.0125C1.48341 16.012 1.11561 15.99 0.75 15.9469C2.85993 17.2942 5.31255 18.0068 7.81594 18C16.3172 18 20.9616 11.0766 20.9616 5.07188C20.9616 4.87501 20.9564 4.67813 20.947 4.48595C21.8485 3.84472 22.6283 3.04787 23.25 2.13282Z" fill="white"/>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </figcaption>
+        </figure>
+        
+        <figure class="company_card">
+          <img src="./assets/images/ganesh -padmanabhan.png" alt="Platform" />
+          <figcaption class="plateform_card-text">
+            <h5>Ganesh Padmanabhan</h5>
+            <p>CEO, Director </p>
+            <ul class="flex">
+              <li>
+                <a href="Javascript:void(0)">
+                  <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.8205 0.5H2.29437C1.33672 0.5 0.5 1.18906 0.5 2.13547V19.7005C0.5 20.652 1.33672 21.5 2.29437 21.5H19.8153C20.7781 21.5 21.5 20.6464 21.5 19.7005V2.13547C21.5056 1.18906 20.7781 0.5 19.8205 0.5ZM7.00953 18.0045H4.00109V8.65063H7.00953V18.0045ZM5.60938 7.22844H5.58781C4.625 7.22844 4.00156 6.51172 4.00156 5.61453C4.00156 4.70094 4.64141 4.00109 5.62578 4.00109C6.61016 4.00109 7.2125 4.69578 7.23406 5.61453C7.23359 6.51172 6.61016 7.22844 5.60938 7.22844ZM18.0045 18.0045H14.9961V12.89C14.9961 11.6647 14.5583 10.8275 13.4698 10.8275C12.6383 10.8275 12.1461 11.39 11.9272 11.938C11.8452 12.1348 11.8231 12.403 11.8231 12.6767V18.0045H8.81469V8.65063H11.8231V9.95234C12.2609 9.32891 12.9448 8.43172 14.5363 8.43172C16.5111 8.43172 18.005 9.73344 18.005 12.5398L18.0045 18.0045Z" fill="white"/>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="Javascript:void(0)">
+                  <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M23.25 2.13282C22.406 2.49955 21.513 2.74116 20.5992 2.85001C21.5595 2.28769 22.2817 1.39434 22.6303 0.337508C21.7224 0.86841 20.7307 1.24092 19.6978 1.43907C19.2629 0.983225 18.7397 0.620588 18.1603 0.373201C17.5808 0.125814 16.9571 -0.00115656 16.327 7.93801e-06C13.7761 7.93801e-06 11.7117 2.03438 11.7117 4.5422C11.7099 4.89102 11.7499 5.23881 11.8308 5.57813C10.0016 5.49238 8.2104 5.02575 6.57187 4.2081C4.93333 3.39044 3.48351 2.23977 2.31516 0.829695C1.90527 1.52069 1.6885 2.30909 1.6875 3.11251C1.6875 4.68751 2.50922 6.0797 3.75 6.89532C3.01487 6.87787 2.29481 6.68331 1.65094 6.32813V6.38438C1.65094 8.58751 3.24469 10.4203 5.35406 10.8375C4.9574 10.9432 4.54864 10.9968 4.13812 10.9969C3.84683 10.9974 3.5562 10.9691 3.27047 10.9125C3.85687 12.7172 5.56359 14.0297 7.58531 14.0672C5.94252 15.3333 3.9256 16.0175 1.85156 16.0125C1.48341 16.012 1.11561 15.99 0.75 15.9469C2.85993 17.2942 5.31255 18.0068 7.81594 18C16.3172 18 20.9616 11.0766 20.9616 5.07188C20.9616 4.87501 20.9564 4.67813 20.947 4.48595C21.8485 3.84472 22.6283 3.04787 23.25 2.13282Z" fill="white"/>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </figcaption>
+        </figure>
+        
+        <figure class="company_card">
+          <img src="./assets/images/ganesh -padmanabhan.png" alt="Platform" />
+          <figcaption class="plateform_card-text">
+            <h5>Ganesh Padmanabhan</h5>
+            <p>CEO, Director </p>
+            <ul class="flex">
+              <li>
+                <a href="Javascript:void(0)">
+                  <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.8205 0.5H2.29437C1.33672 0.5 0.5 1.18906 0.5 2.13547V19.7005C0.5 20.652 1.33672 21.5 2.29437 21.5H19.8153C20.7781 21.5 21.5 20.6464 21.5 19.7005V2.13547C21.5056 1.18906 20.7781 0.5 19.8205 0.5ZM7.00953 18.0045H4.00109V8.65063H7.00953V18.0045ZM5.60938 7.22844H5.58781C4.625 7.22844 4.00156 6.51172 4.00156 5.61453C4.00156 4.70094 4.64141 4.00109 5.62578 4.00109C6.61016 4.00109 7.2125 4.69578 7.23406 5.61453C7.23359 6.51172 6.61016 7.22844 5.60938 7.22844ZM18.0045 18.0045H14.9961V12.89C14.9961 11.6647 14.5583 10.8275 13.4698 10.8275C12.6383 10.8275 12.1461 11.39 11.9272 11.938C11.8452 12.1348 11.8231 12.403 11.8231 12.6767V18.0045H8.81469V8.65063H11.8231V9.95234C12.2609 9.32891 12.9448 8.43172 14.5363 8.43172C16.5111 8.43172 18.005 9.73344 18.005 12.5398L18.0045 18.0045Z" fill="white"/>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="Javascript:void(0)">
+                  <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M23.25 2.13282C22.406 2.49955 21.513 2.74116 20.5992 2.85001C21.5595 2.28769 22.2817 1.39434 22.6303 0.337508C21.7224 0.86841 20.7307 1.24092 19.6978 1.43907C19.2629 0.983225 18.7397 0.620588 18.1603 0.373201C17.5808 0.125814 16.9571 -0.00115656 16.327 7.93801e-06C13.7761 7.93801e-06 11.7117 2.03438 11.7117 4.5422C11.7099 4.89102 11.7499 5.23881 11.8308 5.57813C10.0016 5.49238 8.2104 5.02575 6.57187 4.2081C4.93333 3.39044 3.48351 2.23977 2.31516 0.829695C1.90527 1.52069 1.6885 2.30909 1.6875 3.11251C1.6875 4.68751 2.50922 6.0797 3.75 6.89532C3.01487 6.87787 2.29481 6.68331 1.65094 6.32813V6.38438C1.65094 8.58751 3.24469 10.4203 5.35406 10.8375C4.9574 10.9432 4.54864 10.9968 4.13812 10.9969C3.84683 10.9974 3.5562 10.9691 3.27047 10.9125C3.85687 12.7172 5.56359 14.0297 7.58531 14.0672C5.94252 15.3333 3.9256 16.0175 1.85156 16.0125C1.48341 16.012 1.11561 15.99 0.75 15.9469C2.85993 17.2942 5.31255 18.0068 7.81594 18C16.3172 18 20.9616 11.0766 20.9616 5.07188C20.9616 4.87501 20.9564 4.67813 20.947 4.48595C21.8485 3.84472 22.6283 3.04787 23.25 2.13282Z" fill="white"/>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </figcaption>
+        </figure>
+        
+        <figure class="company_card">
+          <img src="./assets/images/ganesh -padmanabhan.png" alt="Platform" />
+          <figcaption class="plateform_card-text">
+            <h5>Ganesh Padmanabhan</h5>
+            <p>CEO, Director </p>
+            <ul class="flex">
+              <li>
+                <a href="Javascript:void(0)">
+                  <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.8205 0.5H2.29437C1.33672 0.5 0.5 1.18906 0.5 2.13547V19.7005C0.5 20.652 1.33672 21.5 2.29437 21.5H19.8153C20.7781 21.5 21.5 20.6464 21.5 19.7005V2.13547C21.5056 1.18906 20.7781 0.5 19.8205 0.5ZM7.00953 18.0045H4.00109V8.65063H7.00953V18.0045ZM5.60938 7.22844H5.58781C4.625 7.22844 4.00156 6.51172 4.00156 5.61453C4.00156 4.70094 4.64141 4.00109 5.62578 4.00109C6.61016 4.00109 7.2125 4.69578 7.23406 5.61453C7.23359 6.51172 6.61016 7.22844 5.60938 7.22844ZM18.0045 18.0045H14.9961V12.89C14.9961 11.6647 14.5583 10.8275 13.4698 10.8275C12.6383 10.8275 12.1461 11.39 11.9272 11.938C11.8452 12.1348 11.8231 12.403 11.8231 12.6767V18.0045H8.81469V8.65063H11.8231V9.95234C12.2609 9.32891 12.9448 8.43172 14.5363 8.43172C16.5111 8.43172 18.005 9.73344 18.005 12.5398L18.0045 18.0045Z" fill="white"/>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="Javascript:void(0)">
+                  <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M23.25 2.13282C22.406 2.49955 21.513 2.74116 20.5992 2.85001C21.5595 2.28769 22.2817 1.39434 22.6303 0.337508C21.7224 0.86841 20.7307 1.24092 19.6978 1.43907C19.2629 0.983225 18.7397 0.620588 18.1603 0.373201C17.5808 0.125814 16.9571 -0.00115656 16.327 7.93801e-06C13.7761 7.93801e-06 11.7117 2.03438 11.7117 4.5422C11.7099 4.89102 11.7499 5.23881 11.8308 5.57813C10.0016 5.49238 8.2104 5.02575 6.57187 4.2081C4.93333 3.39044 3.48351 2.23977 2.31516 0.829695C1.90527 1.52069 1.6885 2.30909 1.6875 3.11251C1.6875 4.68751 2.50922 6.0797 3.75 6.89532C3.01487 6.87787 2.29481 6.68331 1.65094 6.32813V6.38438C1.65094 8.58751 3.24469 10.4203 5.35406 10.8375C4.9574 10.9432 4.54864 10.9968 4.13812 10.9969C3.84683 10.9974 3.5562 10.9691 3.27047 10.9125C3.85687 12.7172 5.56359 14.0297 7.58531 14.0672C5.94252 15.3333 3.9256 16.0175 1.85156 16.0125C1.48341 16.012 1.11561 15.99 0.75 15.9469C2.85993 17.2942 5.31255 18.0068 7.81594 18C16.3172 18 20.9616 11.0766 20.9616 5.07188C20.9616 4.87501 20.9564 4.67813 20.947 4.48595C21.8485 3.84472 22.6283 3.04787 23.25 2.13282Z" fill="white"/>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </figcaption>
+        </figure>
+        
+        <figure class="company_card">
+          <img src="./assets/images/ganesh -padmanabhan.png" alt="Platform" />
+          <figcaption class="plateform_card-text">
+            <h5>Ganesh Padmanabhan</h5>
+            <p>CEO, Director </p>
+            <ul class="flex">
+              <li>
+                <a href="Javascript:void(0)">
+                  <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.8205 0.5H2.29437C1.33672 0.5 0.5 1.18906 0.5 2.13547V19.7005C0.5 20.652 1.33672 21.5 2.29437 21.5H19.8153C20.7781 21.5 21.5 20.6464 21.5 19.7005V2.13547C21.5056 1.18906 20.7781 0.5 19.8205 0.5ZM7.00953 18.0045H4.00109V8.65063H7.00953V18.0045ZM5.60938 7.22844H5.58781C4.625 7.22844 4.00156 6.51172 4.00156 5.61453C4.00156 4.70094 4.64141 4.00109 5.62578 4.00109C6.61016 4.00109 7.2125 4.69578 7.23406 5.61453C7.23359 6.51172 6.61016 7.22844 5.60938 7.22844ZM18.0045 18.0045H14.9961V12.89C14.9961 11.6647 14.5583 10.8275 13.4698 10.8275C12.6383 10.8275 12.1461 11.39 11.9272 11.938C11.8452 12.1348 11.8231 12.403 11.8231 12.6767V18.0045H8.81469V8.65063H11.8231V9.95234C12.2609 9.32891 12.9448 8.43172 14.5363 8.43172C16.5111 8.43172 18.005 9.73344 18.005 12.5398L18.0045 18.0045Z" fill="white"/>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="Javascript:void(0)">
+                  <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M23.25 2.13282C22.406 2.49955 21.513 2.74116 20.5992 2.85001C21.5595 2.28769 22.2817 1.39434 22.6303 0.337508C21.7224 0.86841 20.7307 1.24092 19.6978 1.43907C19.2629 0.983225 18.7397 0.620588 18.1603 0.373201C17.5808 0.125814 16.9571 -0.00115656 16.327 7.93801e-06C13.7761 7.93801e-06 11.7117 2.03438 11.7117 4.5422C11.7099 4.89102 11.7499 5.23881 11.8308 5.57813C10.0016 5.49238 8.2104 5.02575 6.57187 4.2081C4.93333 3.39044 3.48351 2.23977 2.31516 0.829695C1.90527 1.52069 1.6885 2.30909 1.6875 3.11251C1.6875 4.68751 2.50922 6.0797 3.75 6.89532C3.01487 6.87787 2.29481 6.68331 1.65094 6.32813V6.38438C1.65094 8.58751 3.24469 10.4203 5.35406 10.8375C4.9574 10.9432 4.54864 10.9968 4.13812 10.9969C3.84683 10.9974 3.5562 10.9691 3.27047 10.9125C3.85687 12.7172 5.56359 14.0297 7.58531 14.0672C5.94252 15.3333 3.9256 16.0175 1.85156 16.0125C1.48341 16.012 1.11561 15.99 0.75 15.9469C2.85993 17.2942 5.31255 18.0068 7.81594 18C16.3172 18 20.9616 11.0766 20.9616 5.07188C20.9616 4.87501 20.9564 4.67813 20.947 4.48595C21.8485 3.84472 22.6283 3.04787 23.25 2.13282Z" fill="white"/>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </figcaption>
+        </figure>
+        
+        <figure class="company_card">
+          <img src="./assets/images/ganesh -padmanabhan.png" alt="Platform" />
+          <figcaption class="plateform_card-text">
+            <h5>Ganesh Padmanabhan</h5>
+            <p>CEO, Director </p>
+            <ul class="flex">
+              <li>
+                <a href="Javascript:void(0)">
+                  <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.8205 0.5H2.29437C1.33672 0.5 0.5 1.18906 0.5 2.13547V19.7005C0.5 20.652 1.33672 21.5 2.29437 21.5H19.8153C20.7781 21.5 21.5 20.6464 21.5 19.7005V2.13547C21.5056 1.18906 20.7781 0.5 19.8205 0.5ZM7.00953 18.0045H4.00109V8.65063H7.00953V18.0045ZM5.60938 7.22844H5.58781C4.625 7.22844 4.00156 6.51172 4.00156 5.61453C4.00156 4.70094 4.64141 4.00109 5.62578 4.00109C6.61016 4.00109 7.2125 4.69578 7.23406 5.61453C7.23359 6.51172 6.61016 7.22844 5.60938 7.22844ZM18.0045 18.0045H14.9961V12.89C14.9961 11.6647 14.5583 10.8275 13.4698 10.8275C12.6383 10.8275 12.1461 11.39 11.9272 11.938C11.8452 12.1348 11.8231 12.403 11.8231 12.6767V18.0045H8.81469V8.65063H11.8231V9.95234C12.2609 9.32891 12.9448 8.43172 14.5363 8.43172C16.5111 8.43172 18.005 9.73344 18.005 12.5398L18.0045 18.0045Z" fill="white"/>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="Javascript:void(0)">
+                  <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M23.25 2.13282C22.406 2.49955 21.513 2.74116 20.5992 2.85001C21.5595 2.28769 22.2817 1.39434 22.6303 0.337508C21.7224 0.86841 20.7307 1.24092 19.6978 1.43907C19.2629 0.983225 18.7397 0.620588 18.1603 0.373201C17.5808 0.125814 16.9571 -0.00115656 16.327 7.93801e-06C13.7761 7.93801e-06 11.7117 2.03438 11.7117 4.5422C11.7099 4.89102 11.7499 5.23881 11.8308 5.57813C10.0016 5.49238 8.2104 5.02575 6.57187 4.2081C4.93333 3.39044 3.48351 2.23977 2.31516 0.829695C1.90527 1.52069 1.6885 2.30909 1.6875 3.11251C1.6875 4.68751 2.50922 6.0797 3.75 6.89532C3.01487 6.87787 2.29481 6.68331 1.65094 6.32813V6.38438C1.65094 8.58751 3.24469 10.4203 5.35406 10.8375C4.9574 10.9432 4.54864 10.9968 4.13812 10.9969C3.84683 10.9974 3.5562 10.9691 3.27047 10.9125C3.85687 12.7172 5.56359 14.0297 7.58531 14.0672C5.94252 15.3333 3.9256 16.0175 1.85156 16.0125C1.48341 16.012 1.11561 15.99 0.75 15.9469C2.85993 17.2942 5.31255 18.0068 7.81594 18C16.3172 18 20.9616 11.0766 20.9616 5.07188C20.9616 4.87501 20.9564 4.67813 20.947 4.48595C21.8485 3.84472 22.6283 3.04787 23.25 2.13282Z" fill="white"/>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </figcaption>
+        </figure>
+        
+        <figure class="company_card">
+          <img src="./assets/images/ganesh -padmanabhan.png" alt="Platform" />
+          <figcaption class="plateform_card-text">
+            <h5>Ganesh Padmanabhan</h5>
+            <p>CEO, Director </p>
+            <ul class="flex">
+              <li>
+                <a href="Javascript:void(0)">
+                  <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.8205 0.5H2.29437C1.33672 0.5 0.5 1.18906 0.5 2.13547V19.7005C0.5 20.652 1.33672 21.5 2.29437 21.5H19.8153C20.7781 21.5 21.5 20.6464 21.5 19.7005V2.13547C21.5056 1.18906 20.7781 0.5 19.8205 0.5ZM7.00953 18.0045H4.00109V8.65063H7.00953V18.0045ZM5.60938 7.22844H5.58781C4.625 7.22844 4.00156 6.51172 4.00156 5.61453C4.00156 4.70094 4.64141 4.00109 5.62578 4.00109C6.61016 4.00109 7.2125 4.69578 7.23406 5.61453C7.23359 6.51172 6.61016 7.22844 5.60938 7.22844ZM18.0045 18.0045H14.9961V12.89C14.9961 11.6647 14.5583 10.8275 13.4698 10.8275C12.6383 10.8275 12.1461 11.39 11.9272 11.938C11.8452 12.1348 11.8231 12.403 11.8231 12.6767V18.0045H8.81469V8.65063H11.8231V9.95234C12.2609 9.32891 12.9448 8.43172 14.5363 8.43172C16.5111 8.43172 18.005 9.73344 18.005 12.5398L18.0045 18.0045Z" fill="white"/>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="Javascript:void(0)">
+                  <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M23.25 2.13282C22.406 2.49955 21.513 2.74116 20.5992 2.85001C21.5595 2.28769 22.2817 1.39434 22.6303 0.337508C21.7224 0.86841 20.7307 1.24092 19.6978 1.43907C19.2629 0.983225 18.7397 0.620588 18.1603 0.373201C17.5808 0.125814 16.9571 -0.00115656 16.327 7.93801e-06C13.7761 7.93801e-06 11.7117 2.03438 11.7117 4.5422C11.7099 4.89102 11.7499 5.23881 11.8308 5.57813C10.0016 5.49238 8.2104 5.02575 6.57187 4.2081C4.93333 3.39044 3.48351 2.23977 2.31516 0.829695C1.90527 1.52069 1.6885 2.30909 1.6875 3.11251C1.6875 4.68751 2.50922 6.0797 3.75 6.89532C3.01487 6.87787 2.29481 6.68331 1.65094 6.32813V6.38438C1.65094 8.58751 3.24469 10.4203 5.35406 10.8375C4.9574 10.9432 4.54864 10.9968 4.13812 10.9969C3.84683 10.9974 3.5562 10.9691 3.27047 10.9125C3.85687 12.7172 5.56359 14.0297 7.58531 14.0672C5.94252 15.3333 3.9256 16.0175 1.85156 16.0125C1.48341 16.012 1.11561 15.99 0.75 15.9469C2.85993 17.2942 5.31255 18.0068 7.81594 18C16.3172 18 20.9616 11.0766 20.9616 5.07188C20.9616 4.87501 20.9564 4.67813 20.947 4.48595C21.8485 3.84472 22.6283 3.04787 23.25 2.13282Z" fill="white"/>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </figcaption>
+        </figure>
+        </div>
+      </div>
+    </section>
+    <!--Investors Section-->
+    <section class="investor content-section">
+      <div class="container">
+        <h3 class="investor-title">Investors</h3>
+        <div class="investor_bottom grid">
+          <img src="./assets/images/amv.png" alt="Investors-AMV" />
+          <img src="./assets/images/amv.png" alt="Investors-AMV" />
+          <img src="./assets/images/amv.png" alt="Investors-AMV" />
+          <img src="./assets/images/amv.png" alt="Investors-AMV" />
+        </div>
+      </div>
+    </section>
+    <section class="mission">
+      <div class="container">
+        <h3 class="text-center">Our mission is to make all of the world's biomedical knowledge accessible to power human health outcomes. We believe that empowering health professionals and patients with the right information in the right context at the right time, will accelerate outcomes for everyone. 
+        </h3>
       </div>
     </section>
   </main>
   <!--Footer-->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer_top grid">
-        <ul class="footer_top-links flex">
-          <li>
-            <a href="#">Solutions</a>
-          </li>
-          <li>
-            <a href="#">Plateform</a>
-          </li>
-          <li>
-            <a href="#">Responsible AI</a>
-          </li>
-          <li>
-            <a href="#">Company</a>
-          </li>
-        </ul>
-        <div class="footer_top-form">
-          <h6>Updates</h6>
-          <p>Sign up for Autonomize updates</p>
-          <div class="form-control">
-            <input type="text" class="form-input" placeholder="Enter your Email">
-            <a href="#" class="btn btn_small">Submit</a>
+  <section class="footer-bg">
+    <!--Advertisement Section-->
+    <section class="advertisement content-section">
+      <div class="container">
+        <div class="advertisement-box">
+          <span class="advertisement-icon">
+            <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <circle cx="60" cy="60" r="59" fill="#14014B" stroke="white" stroke-width="2"/>
+              <rect x="38" y="35" width="56" height="51" fill="url(#pattern0)"/>
+              <defs>
+              <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+              <use xlink:href="#image0_6715_8955" transform="scale(0.0222222 0.0243902)"/>
+              </pattern>
+              <image id="image0_6715_8955" width="200" height="41" xlink:href="data:image/png;base64,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UmVhZHlxyWU8AAADI2lUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNi4wLWMwMDIgNzkuMTY0NDYwLCAyMDIwLzA1LzEyLTE2OjA0OjE3ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgMjEuMiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM1MUYyNDdDQzY4MTFFQzlEMzVBNjAwODEwRjJFQjQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM1MUYyNDhDQzY4MTFFQzlEMzVBNjAwODEwRjJFQjQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzUxRjI0NUNDNjgxMUVDOUQzNUE2MDA4MTBGMkVCNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzUxRjI0NkNDNjgxMUVDOUQzNUE2MDA4MTBGMkVCNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PmT8teMAAA4BSURBVHja7F0JeFTVFZ43M1lJIJCwI0soi4ggsrSsLiyCLAFqQQRrK7WLVOVTpFEKX6tga4EKWqBslcVQQSgiiQu74vexNwll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"/>
+              </defs>
+            </svg>
+          </span>
+          <div class="advertisement_caption">
+            <h3>If you are interested in exploring a career at Autonomize, check out our openings here</h3>
+            <a href="Javascript:void(0)" class="btn banner_content-btn">See Openings</a>
           </div>
         </div>
       </div>
-      <div class="footer_bottom grid">
-        <div class="footer_bottom-first flex">
-          <a href="#" class="footer_logo">
-            <img class="footer_logo-img" src="./assets/images/autonomize-logo.png" alt="Autonomize" />
-          </a>
-          <ul class="footer_bottom-links flex">
-            <li>
-              <a href="#">Terms of Service</a>
-            </li>
-            <li>
-              <a href="#">Privacy Policy</a>
-            </li>
-          </ul>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer_top grid">
+          <div class="grid grid-col-2 footer_top-left">
+            <div class="footer_top-first">
+              <h6 class="footer_title">Solutions</h6>
+              <ul class="footer_top-links flex">
+                <li>
+                  <a href="Javascript:void(0)">Accelerate Clinical Research</a>
+                </li>
+                <li>
+                  <a href="Javascript:void(0)">Patient Engagement & Activation</a>
+                </li>
+                <li>
+                  <a href="Javascript:void(0)">Clinical Decision Support</a>
+                </li>
+                <li>
+                  <a href="Javascript:void(0)">Healthcare Enterprise</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer_top-second">
+              <h6 class="footer_title">Company</h6>
+              <ul class="footer_top-links flex">
+                <li>
+                  <a href="Javascript:void(0)">Platform</a>
+                </li>
+                <li>
+                  <a href="Javascript:void(0)">Trusted AI</a>
+                </li>
+                <li>
+                  <a href="Javascript:void(0)">Board of Directors</a>
+                </li>
+                <li>
+                  <a href="Javascript:void(0)">Advisory Board</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer_top-form">
+            <h6>Updates</h6>
+            <p>Sign up for Autonomize updates</p>
+            <div class="form-control">
+              <input type="text" class="form-input" placeholder="Enter your Email">
+              <a href="Javascript:void(0)" class="btn btn_small">Submit</a>
+            </div>
+          </div>
         </div>
-        <div class="footer_bottom-last flex">
-          <p>@2023 Autonomize, Inc</p>
-          <ul class="flex">
-            <li>
-              <a href="#">
-                <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M23.25 2.13282C22.406 2.49955 21.513 2.74116 20.5992 2.85001C21.5595 2.28769 22.2817 1.39434 22.6303 0.337508C21.7224 0.86841 20.7307 1.24092 19.6978 1.43907C19.2629 0.983225 18.7397 0.620588 18.1603 0.373201C17.5808 0.125814 16.9571 -0.00115656 16.327 7.93801e-06C13.7761 7.93801e-06 11.7117 2.03438 11.7117 4.5422C11.7099 4.89102 11.7499 5.23881 11.8308 5.57813C10.0016 5.49238 8.2104 5.02575 6.57187 4.2081C4.93333 3.39044 3.48351 2.23977 2.31516 0.829695C1.90527 1.52069 1.6885 2.30909 1.6875 3.11251C1.6875 4.68751 2.50922 6.0797 3.75 6.89532C3.01487 6.87787 2.29481 6.68331 1.65094 6.32813V6.38438C1.65094 8.58751 3.24469 10.4203 5.35406 10.8375C4.9574 10.9432 4.54864 10.9968 4.13812 10.9969C3.84683 10.9974 3.5562 10.9691 3.27047 10.9125C3.85687 12.7172 5.56359 14.0297 7.58531 14.0672C5.94252 15.3333 3.9256 16.0175 1.85156 16.0125C1.48341 16.012 1.11561 15.99 0.75 15.9469C2.85993 17.2942 5.31255 18.0068 7.81594 18C16.3172 18 20.9616 11.0766 20.9616 5.07188C20.9616 4.87501 20.9564 4.67813 20.947 4.48595C21.8485 3.84472 22.6283 3.04787 23.25 2.13282Z" fill="white"/>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M19.8205 0.5H2.29437C1.33672 0.5 0.5 1.18906 0.5 2.13547V19.7005C0.5 20.652 1.33672 21.5 2.29437 21.5H19.8153C20.7781 21.5 21.5 20.6464 21.5 19.7005V2.13547C21.5056 1.18906 20.7781 0.5 19.8205 0.5ZM7.00953 18.0045H4.00109V8.65063H7.00953V18.0045ZM5.60938 7.22844H5.58781C4.625 7.22844 4.00156 6.51172 4.00156 5.61453C4.00156 4.70094 4.64141 4.00109 5.62578 4.00109C6.61016 4.00109 7.2125 4.69578 7.23406 5.61453C7.23359 6.51172 6.61016 7.22844 5.60938 7.22844ZM18.0045 18.0045H14.9961V12.89C14.9961 11.6647 14.5583 10.8275 13.4698 10.8275C12.6383 10.8275 12.1461 11.39 11.9272 11.938C11.8452 12.1348 11.8231 12.403 11.8231 12.6767V18.0045H8.81469V8.65063H11.8231V9.95234C12.2609 9.32891 12.9448 8.43172 14.5363 8.43172C16.5111 8.43172 18.005 9.73344 18.005 12.5398L18.0045 18.0045Z" fill="white"/>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M23.8425 3.97453C23.8425 1.86516 22.2909 0.168281 20.3737 0.168281C17.7769 0.0468748 15.1284 0 12.4219 0H11.5781C8.87812 0 6.225 0.0468749 3.62812 0.16875C1.71562 0.16875 0.164058 1.875 0.164058 3.98437C0.0468701 5.65266 -0.00281737 7.32141 -4.86636e-06 8.99016C-0.00469237 10.6589 0.0484326 12.3292 0.15937 14.0011C0.15937 16.1105 1.71093 17.8214 3.62343 17.8214C6.35156 17.948 9.14999 18.0042 11.9953 17.9995C14.8453 18.0089 17.6359 17.9495 20.3672 17.8214C22.2844 17.8214 23.8359 16.1105 23.8359 14.0011C23.9484 12.3277 24 10.6589 23.9953 8.98547C24.0059 7.31672 23.955 5.64641 23.8425 3.97453ZM9.70312 13.5886V4.37766L16.5 8.98078L9.70312 13.5886Z" fill="white"/>
-                </svg>
-              </a>
-            </li>
-          </ul>
+        <div class="footer_bottom grid">
+          <div class="footer_bottom-first grid grid-col-2">
+            <a href="Javascript:void(0)" class="footer_logo">
+              <img class="footer_logo-img" src="./assets/images/autonomize-logo.png" alt="Autonomize" />
+            </a>
+            <ul class="footer_bottom-links flex">
+              <li>
+                <a href="Javascript:void(0)" data-toggle="service-modal">Terms of Service</a>
+              </li>
+              <li>
+                <a href="Javascript:void(0)" data-toggle="policy-modal">Privacy Policy</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer_bottom-last flex">
+            <p>@2023 Autonomize, Inc</p>
+            <ul class="flex">
+              <li>
+                <a href="Javascript:void(0)">
+                  <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M23.25 2.13282C22.406 2.49955 21.513 2.74116 20.5992 2.85001C21.5595 2.28769 22.2817 1.39434 22.6303 0.337508C21.7224 0.86841 20.7307 1.24092 19.6978 1.43907C19.2629 0.983225 18.7397 0.620588 18.1603 0.373201C17.5808 0.125814 16.9571 -0.00115656 16.327 7.93801e-06C13.7761 7.93801e-06 11.7117 2.03438 11.7117 4.5422C11.7099 4.89102 11.7499 5.23881 11.8308 5.57813C10.0016 5.49238 8.2104 5.02575 6.57187 4.2081C4.93333 3.39044 3.48351 2.23977 2.31516 0.829695C1.90527 1.52069 1.6885 2.30909 1.6875 3.11251C1.6875 4.68751 2.50922 6.0797 3.75 6.89532C3.01487 6.87787 2.29481 6.68331 1.65094 6.32813V6.38438C1.65094 8.58751 3.24469 10.4203 5.35406 10.8375C4.9574 10.9432 4.54864 10.9968 4.13812 10.9969C3.84683 10.9974 3.5562 10.9691 3.27047 10.9125C3.85687 12.7172 5.56359 14.0297 7.58531 14.0672C5.94252 15.3333 3.9256 16.0175 1.85156 16.0125C1.48341 16.012 1.11561 15.99 0.75 15.9469C2.85993 17.2942 5.31255 18.0068 7.81594 18C16.3172 18 20.9616 11.0766 20.9616 5.07188C20.9616 4.87501 20.9564 4.67813 20.947 4.48595C21.8485 3.84472 22.6283 3.04787 23.25 2.13282Z" fill="white"/>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="Javascript:void(0)">
+                  <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.8205 0.5H2.29437C1.33672 0.5 0.5 1.18906 0.5 2.13547V19.7005C0.5 20.652 1.33672 21.5 2.29437 21.5H19.8153C20.7781 21.5 21.5 20.6464 21.5 19.7005V2.13547C21.5056 1.18906 20.7781 0.5 19.8205 0.5ZM7.00953 18.0045H4.00109V8.65063H7.00953V18.0045ZM5.60938 7.22844H5.58781C4.625 7.22844 4.00156 6.51172 4.00156 5.61453C4.00156 4.70094 4.64141 4.00109 5.62578 4.00109C6.61016 4.00109 7.2125 4.69578 7.23406 5.61453C7.23359 6.51172 6.61016 7.22844 5.60938 7.22844ZM18.0045 18.0045H14.9961V12.89C14.9961 11.6647 14.5583 10.8275 13.4698 10.8275C12.6383 10.8275 12.1461 11.39 11.9272 11.938C11.8452 12.1348 11.8231 12.403 11.8231 12.6767V18.0045H8.81469V8.65063H11.8231V9.95234C12.2609 9.32891 12.9448 8.43172 14.5363 8.43172C16.5111 8.43172 18.005 9.73344 18.005 12.5398L18.0045 18.0045Z" fill="white"/>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="Javascript:void(0)">
+                  <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M23.8425 3.97453C23.8425 1.86516 22.2909 0.168281 20.3737 0.168281C17.7769 0.0468748 15.1284 0 12.4219 0H11.5781C8.87812 0 6.225 0.0468749 3.62812 0.16875C1.71562 0.16875 0.164058 1.875 0.164058 3.98437C0.0468701 5.65266 -0.00281737 7.32141 -4.86636e-06 8.99016C-0.00469237 10.6589 0.0484326 12.3292 0.15937 14.0011C0.15937 16.1105 1.71093 17.8214 3.62343 17.8214C6.35156 17.948 9.14999 18.0042 11.9953 17.9995C14.8453 18.0089 17.6359 17.9495 20.3672 17.8214C22.2844 17.8214 23.8359 16.1105 23.8359 14.0011C23.9484 12.3277 24 10.6589 23.9953 8.98547C24.0059 7.31672 23.955 5.64641 23.8425 3.97453ZM9.70312 13.5886V4.37766L16.5 8.98078L9.70312 13.5886Z" fill="white"/>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
+  </section>
   <script src="https://unpkg.com/ityped@0.0.10"></script>
+  <script src="./js/main.js"></script>
   <script>
     window.ityped.init(document.querySelector('.ityped'),{
         strings: ['for Healthcare','for Life Sciences','for Payers','for Providers','for Patients'],

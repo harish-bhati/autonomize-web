@@ -12,8 +12,11 @@
     &-list{
       @include flex(flex, wrap, null, center, 25px);
     }
-    &-link:hover{
-      color: $purple-dark;
+    &-link{
+      font-size: 16px;
+      &:hover,.active-link{
+        color: $purple-dark;
+      }
     }
   }
   &_logo{
@@ -27,8 +30,10 @@
     padding-inline: 40px;
     padding-bottom: 16px;
     margin-right: -60px;
+    font-weight: 600;
+    font-size: 16px;
     &:hover{
-      background: $purple;
+      background: linear-gradient(90deg, #5E2EDB 0%, #B900C9 100%);
     }
   }
 }

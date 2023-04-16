@@ -1,8 +1,22 @@
 .form{
+  &-control{
+    margin-top: 30px;
+  }
   &-input{
     background: transparent;
     box-shadow: none;
     border-bottom: 1px solid $input-border;
     padding-bottom: 10px;
+    outline: 0;
+  }
+  &-input-fill{
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 3px;
+    padding: 14px 15px;
+    font-size: 14px;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.7);
+    outline: 0;
   }
 }
