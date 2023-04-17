@@ -2,6 +2,9 @@
   padding-inline: 30px;
   margin-inline: auto;
   max-width: 1400px;
+  @media screen and (max-width: 1500px){
+    max-width: 1160px;
+  }
 }
 .container-fluid{
   padding-inline: 60px;

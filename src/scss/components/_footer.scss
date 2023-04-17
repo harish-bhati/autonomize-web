@@ -10,7 +10,7 @@
   }
   a{
     text-transform: capitalize;
-    font-size: 17px;
+    font-size: 0.7272rem;
     font-weight: 500;
     &:hover{
       color: $purple-dark;
@@ -48,7 +48,7 @@
   &_bottom{
     grid-template-columns: 1fr 40%;
     a,p{
-      @include font_size_color(17px, 400);
+      @include font_size_color(0.7272rem, 400);
     }
     &-first{
       gap: 60px;

@@ -1,19 +1,24 @@
 html {
   scroll-behavior: smooth;
+  font-size: 22px;
+  @media screen and (max-width: 1280px){
+    font-size: 18px;
+  }
 }
 body{
-  color: #D4CAF3;
-  font:500 22px/1.6 'Inter', arial;
+  color: $white;
+  font:500 1rem/1.6 'Inter', arial;
   background: #14014B;
+  // font-size: toRem(18);
 }
 h1{
-  font:900 60px/1 'Epilogue', arial;
+  font:900 2.72rem/1 'Epilogue', arial;
   letter-spacing: .3px;
   color:$purple-regular;
   margin-bottom: 18px;
 }
 h2{
-  font:900 60px/1.4 'Epilogue', arial;
+  font:900 2.72rem/1.4 'Epilogue', arial;
   background: $purple-text-lg;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -22,24 +27,23 @@ h2{
   margin-bottom: 20px;
 }
 h3{
-  font:600 32px/1.2 'Inter', arial;
+  font:600 1.45rem/1.2 'Inter', arial;
   color:$white;
 }
 h4{
-  font:700 32px/1.2 'Inter', arial;
+  font:700 1.45rem/1.2 'Inter', arial;
   color:$white;
 }
 h5{
-  font:600 18px/1.2 'Epilogue', arial;
-  color:$white;
+  font:600 0.81rem/1.2 'Epilogue', arial;
+  color:$blue;
 }
 h6{
-  font:600 16px/1.2 'Inter', arial;
+  font:600 0.72rem/1.2 'Inter', arial;
   color:$white;
   margin-bottom: 20px;
 }
 a{
-  font-size: 14px;
   color: $white;
   text-transform: uppercase;
   transition: all .5s ease;

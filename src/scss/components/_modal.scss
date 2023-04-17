@@ -22,6 +22,7 @@
   h2{
     -webkit-text-fill-color: #fff;
   }
+  
   &-body{
     max-height: calc(100vh - 250px);
     overflow: auto;
@@ -30,8 +31,7 @@
   &-content{
     max-width: 775px;
     width: 100%;
-    // background: $white;
-    background: linear-gradient(360deg, #B900C9 0%, #5C2FDC 100%);
+    background: $white;
     color: $blue;
     border-radius: 10px;
     padding-bottom: 30px;
@@ -39,14 +39,38 @@
       margin-bottom: 20px;
     }
   }
-  h5{
+  h4{
     color: $blue;
-    margin-bottom: 3px;
+    line-height: 1;
+  }
+  h5{
+    font-size: 22px;
   }
 }
 .modal-open{
   overflow: hidden;
   .modal{
     display: grid;
+  }
+}
+.modal-request{
+  .modal-body{
+    position: relative;
+    padding-block: 50px;
+    padding-inline: 130px;
+  }
+  .modal-content{
+    
+    background: linear-gradient(180deg, #771181 0%, #331688 100%);
+  }
+  .close{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+  .request-form{
+    &-group{
+      gap:32px
+    }
   }
 }
