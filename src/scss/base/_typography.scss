@@ -3,17 +3,14 @@ html {
 }
 body{
   color: #D4CAF3;
-  font:400 16px/1.6 'Inter', arial;
+  font:500 22px/1.6 'Inter', arial;
   background: #14014B;
 }
-// .content-section{
-//   scroll-snap-align: start;
-// }
 h1{
-  font:700 70px/1 'Epilogue', arial;
-  letter-spacing: -0.06em;
+  font:900 60px/1 'Epilogue', arial;
+  letter-spacing: .3px;
   color:$purple-regular;
-  margin-bottom: 12px;
+  margin-bottom: 18px;
 }
 h2{
   font:900 60px/1.4 'Epilogue', arial;
@@ -22,14 +19,14 @@ h2{
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
-  margin: 20px;
+  margin-bottom: 20px;
 }
 h3{
-  font:600 28px/1.2 'Inter', arial;
+  font:600 32px/1.2 'Inter', arial;
   color:$white;
 }
 h4{
-  font:700 22px/1.2 'Epilogue', arial;
+  font:700 32px/1.2 'Inter', arial;
   color:$white;
 }
 h5{

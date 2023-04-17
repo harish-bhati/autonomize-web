@@ -1,16 +1,27 @@
 .solution{
-  padding-top: 140px;
+  padding-top: 110px;
   &_top{
-    margin-bottom: 60px;
+    margin-bottom: 80px;
   }
   &_bottom{
-    gap:50px 140px;
+    gap:50px 60px;
     align-items: stretch;
   }
   &_card{
-    border: 1px solid $border;
-    border-radius: 6px;
-    padding: 35px 50px;
+    &-icon{
+      height: 60px;
+      width: 60px;
+      border-radius: 50%;
+      margin: 0;
+      background: $blue-light;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
     &-list{
       padding-left: 20px;
     }
@@ -19,22 +30,21 @@
       padding-left: 10px;
       padding-bottom: 3px;
     }
-    h3{
-      color: #EA39FF;
-      margin-bottom: 15px;
-    }
-    &-icon{
-      display: inline-block;
-      margin-bottom: 10px;
-    }
   }
 }
 
 .card-gradient {
   position: relative;
-  background-image: transparent;
   z-index: 1;
+  border: 1px solid $border;
+  border-radius: 6px;
+  padding: 70px 50px;
+  h3{
+    color: #EA39FF;
+    margin-bottom: 15px;
+  }
   &:hover{
+    border-color: transparent;
     &::before {
       opacity: 1;
     }
@@ -50,5 +60,6 @@
     z-index: -1;
     transition: opacity 0.5s linear;
     opacity: 0;
+    border-radius: 6px;
   }
 }
