@@ -1,40 +1,40 @@
+html {
+  scroll-behavior: smooth;
+}
 body{
-  color: $white;
-  font:400 16px/1.2 'Open Sans', arial;
+  color: #D4CAF3;
+  font:500 22px/1.6 'Inter', arial;
   background: #14014B;
 }
 h1{
-  font:700 70px/1 'Open Sans', arial;
-  letter-spacing: -0.06em;
+  font:900 60px/1 'Epilogue', arial;
+  letter-spacing: .3px;
   color:$purple-regular;
-  margin-bottom: 8px;
+  margin-bottom: 18px;
 }
 h2{
-  font:900 60px/1.4 'Open Sans', arial;
+  font:900 60px/1.4 'Epilogue', arial;
   background: $purple-text-lg;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
-  margin: 0;
+  margin-bottom: 20px;
 }
 h3{
-  font:700 40px/1.2 'Open Sans', arial;
+  font:600 32px/1.2 'Inter', arial;
   color:$white;
-  margin-bottom: 40px;
 }
 h4{
-  font:700 32px/1.2 'Open Sans', arial;
+  font:700 32px/1.2 'Inter', arial;
   color:$white;
-  margin-bottom: 0;
 }
 h5{
-  font:600 30px/1.2 'Open Sans', arial;
+  font:600 18px/1.2 'Epilogue', arial;
   color:$white;
-  margin-bottom: 12px;
 }
 h6{
-  font:700 24px/1.2 'Open Sans', arial;
+  font:600 16px/1.2 'Inter', arial;
   color:$white;
   margin-bottom: 20px;
 }

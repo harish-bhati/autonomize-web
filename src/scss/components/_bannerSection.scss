@@ -1,6 +1,6 @@
 .banner{
-  padding-block: 30px;
-  background: radial-gradient(50% 50% at 50% 50%, rgba(171, 47, 173, 0.42) 0%, #14014A 100%);
+  padding-block: 100px;
+  background: linear-gradient(180deg, #14014A 30.43%, #6E0A70 130.33%);
   mix-blend-mode: normal;
   &_content{
     grid-template-columns: 1fr 35%;
@@ -12,6 +12,8 @@
     }
     &-btn{
       margin-top: 40px;
+      font-size: 18px;
+      font-weight: 600;
     }
   }
 }

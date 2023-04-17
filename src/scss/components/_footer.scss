@@ -1,25 +1,68 @@
 .footer{
-  padding: 100px 0 120px;
-  background: linear-gradient(175.23deg, #14014B 74.06%, #B900C9 143.26%);
+  &-bg{
+    position: relative;
+    padding: 115px 0 58px;
+    margin-top: 190px;
+    background: $footer-gt;
+  }
+  &_title{
+    margin-bottom: 25px;
+  }
+  a{
+    text-transform: capitalize;
+    font-size: 17px;
+    font-weight: 500;
+    &:hover{
+      color: $purple-dark;
+    }
+  }
   &_top{
     padding-bottom: 80px;
     grid-template-columns: 1fr 40%;
+    align-items: flex-start;
+    p{
+      font-size: 17px;
+    }
+    &-links{
+      @include flex(flex, wrap, null, flex-start, 12px, column);
+    }
     &-form{
       h6{
         margin-bottom: 8px;
       }
     }
+    .form-input-fill{
+      width: 70%;
+    }
     .form-control{
       margin-top: 30px;
+    }
+    .btn {
+      min-width: 120px;
+      justify-content: center;
+      &:hover{
+        color: $white;
+      }
     }
   }
   &_bottom{
     grid-template-columns: 1fr 40%;
+    a,p{
+      @include font_size_color(17px, 400);
+    }
     &-first{
       gap: 60px;
     }
     &-last{
       gap: 60px;
+      a {
+        &:hover{
+          svg{
+            transition: all .5s ease;
+            fill: $purple-dark;
+          }
+        }
+      }
     }
   }
 }
