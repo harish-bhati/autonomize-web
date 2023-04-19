@@ -1,27 +1,50 @@
+html {
+  scroll-behavior: smooth;
+  font-size: 22px;
+  @media screen and (max-width: 1280px){
+    font-size: 18px;
+  }
+}
+body{
+  color: $white;
+  font:500 1rem/1.6 'Inter', arial;
+  background: #14014B;
+  // font-size: toRem(60);
+}
 h1{
-  font:600 24px/1.4 'OpenSans-SemiBold', arial;
-  color: $darkGreen;
+  font:900 2.72rem/1 'Epilogue', arial;
+  letter-spacing: .3px;
+  color:$purple-regular;
+  margin-bottom: 18px;
 }
 h2{
-  font:700 20px/1.4 'OpenSans-Bold', arial;
-  color:$darkGray;
-}
-h3{
-  font:600 18px/1.4 'OpenSans-SemiBold', arial;
-  color:$black;
+  font:900 2.72rem/1.4 'Epilogue', arial;
+  background: $purple-text-lg;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
   margin-bottom: 20px;
 }
+h3{
+  font:600 1.45rem/1.2 'Inter', arial;
+  color:$white;
+}
 h4{
-  font:700 16px/1.4 'OpenSans-Bold', arial;
-  color:$darkGray;
-  margin-bottom: 8px;
+  font:700 1.45rem/1.2 'Inter', arial;
+  color:$white;
 }
 h5{
-  font:700 14px/1.4 'OpenSans-Bold', arial;
-  color:$darkGray;
-  margin-bottom: 8px;
+  font:600 0.81rem/1.2 'Epilogue', arial;
+  color:$blue;
+}
+h6{
+  font:600 0.72rem/1.2 'Inter', arial;
+  color:$white;
+  margin-bottom: 20px;
 }
 a{
-  color: $green;
-  font-family: 'OpenSans-SemiBold', arial;
+  color: $white;
+  text-transform: uppercase;
+  transition: all .5s ease;
 }

@@ -1,0 +1,41 @@
+.container{
+  padding-inline: 30px;
+  margin-inline: auto;
+  max-width: 1400px;
+  @media screen and (max-width: 1500px){
+    max-width: 1160px;
+  }
+  @media screen and (max-width: 1025px){
+    max-width: 900px;
+  }
+}
+.container-fluid{
+  padding-inline: 60px;
+  margin-inline: auto;
+}
+.flex{
+  @include flex(flex, wrap, null, center,30px);
+}
+.grid{
+  @include grid(grid, 60px, null, center);
+}
+.grid-col-2{
+  grid-template-columns: repeat(2,1fr);
+}
+.grid-col-3{
+  grid-template-columns: repeat(3,1fr);
+}
+.text-purple{
+  color: $purple-light;
+  font-weight: 700;
+}
+.text-white{
+  color: $white;
+  font-weight: 700;
+}
+.text-right{
+  text-align: right;
+}
+.text-center{
+  text-align: center;
+}

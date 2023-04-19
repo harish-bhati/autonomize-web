@@ -1,0 +1,18 @@
+.btn{
+  display: inline-flex;
+  padding: 20px 40px;
+  background: $purple-btn-lg;
+  border-radius: 6px;
+  border: none;
+  transition: all .5s ease;
+  text-transform: uppercase;
+  color: $white;
+  cursor: pointer;
+  &:hover{
+    background: $purple-btn-lg-hover;
+    box-shadow: $shadow-btn;
+  }
+  &_small{
+    padding: 10px 19px;
+  }
+}

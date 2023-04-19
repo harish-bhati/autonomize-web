@@ -1,0 +1,53 @@
+.header{
+  background: $blue;
+  box-shadow: $shadow;
+  z-index: 2;
+  @include position(sticky, 0, 0);
+  .container-fluid{
+    @include flex(flex, wrap, space-between, center, 10px);
+  }
+  &_nav{
+    &-list{
+      @include flex(flex, wrap, null, center, 45px);
+    }
+    &-link{
+      @include font_size_color(0.81rem, 700);
+      &:hover,.active-link{
+        color: $purple-dark;
+      }
+    }
+  }
+  &_logo{
+    padding-block: 29px;
+  }
+  &_btn{
+    background: $purple-dark;
+    align-self: stretch;
+    padding-inline: 40px;
+    margin-right: -60px;
+    position: relative;
+    min-width: 240px;
+    justify-content: center;
+    @include font_size_color(0.81rem, 700);
+    @include flex(flex, wrap, null, center);
+    &:hover{
+      background: $header-btn-gt;
+      .header_btn-arrow{
+        right: 30px;
+        opacity: 1;
+      }
+      .header_btn-text {
+        transform: translateX(-10px);
+      }
+    }
+    &-text{
+      transition: all .3s ease;
+    }
+    &-arrow{
+      opacity: 0;
+      transition: all 0.3s ease;
+      position: absolute;
+      right: 50px;
+    }
+  }
+}
